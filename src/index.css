@@ -1,0 +1,32 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  @import url("https://fonts.googleapis.com/css2?family=Familjen+Grotesk:ital,wght@0,400..700;1,400..700&display=swap");
+  @import url("https://fonts.googleapis.com/css2?family=Familjen+Grotesk:ital,wght@0,400..700;1,400..700&family=Fjalla+One&display=swap");
+
+  .group:hover .arrow {
+    transition-property: opacity;
+    transition-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+    transition-duration: 0.3s;
+  }
+
+  /* .btn__icon {
+    /* flex-shrink: 0;
+    width: 4.2rem;
+    height: 4.2rem;
+    border-radius: 9999px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: -1.4rem;
+    margin-bottom: -1.4rem;
+    margin-right: -1.7rem;
+    font-size: 1rem;
+    transition-property: opacity;
+    transition-timing-function: cubic-bezier(.215,.61,.355,1);
+    transition-duration: .3s;
+}
+ */
+}
