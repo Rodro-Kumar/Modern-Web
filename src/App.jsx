@@ -5,6 +5,8 @@ import Marquee from "./Component/Marquee";
 import About from "./Component/About";
 import Play from "./Component/Play";
 import Feature from "./Component/Feature";
+import Reviews from "./Component/Reviews";
+import Card from "./Component/Card";
 
 function App() {
   return (
@@ -15,6 +17,8 @@ function App() {
       <About />
       <Play />
       <Feature />
+      <Reviews />
+      <Card />
     </>
   );
 }
