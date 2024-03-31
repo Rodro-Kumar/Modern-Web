@@ -7,6 +7,7 @@ import Play from "./Component/Play";
 import Feature from "./Component/Feature";
 import Reviews from "./Component/Reviews";
 import Card from "./Component/Card";
+import Ready from "./Component/Ready";
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
       <Feature />
       <Reviews />
       <Card />
+      <Ready />
     </>
   );
 }
