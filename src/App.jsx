@@ -8,8 +8,11 @@ import Feature from "./Component/Feature";
 import Reviews from "./Component/Reviews";
 import Card from "./Component/Card";
 import Ready from "./Component/Ready";
+import Footer from "./Component/Footer";
+import LocomotiveScroll from "locomotive-scroll";
 
 function App() {
+  const locomotiveScroll = new LocomotiveScroll();
   return (
     <>
       <Nav />
@@ -21,6 +24,7 @@ function App() {
       <Reviews />
       <Card />
       <Ready />
+      <Footer />
     </>
   );
 }
