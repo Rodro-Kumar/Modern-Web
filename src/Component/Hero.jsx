@@ -1,5 +1,6 @@
 import React from "react";
 import Btn1 from "./Common/Btn1";
+import { motion } from "framer-motion";
 
 const Hero = () => {
   return (
@@ -13,7 +14,15 @@ const Hero = () => {
                   <div key={index}>
                     <div className="flex items-center">
                       {index === 1 && (
-                        <div className="w-36 h-[96px] bg-red-500 mb-2 rounded-lg mr-3"></div>
+                        <motion.div
+                          initial={{ width: 0 }}
+                          animate={{ width: "144px" }}
+                          transition={{
+                            ease: [0.76, 0, 0.24, 1],
+                            duration: 1,
+                          }}
+                          className="w-36 h-[96px] bg-[url('https://ochi.design/wp-content/uploads/2022/04/content-image01.jpg')] bg-cover bg-center mb-2 rounded-lg mr-3"
+                        ></motion.div>
                       )}
                       <h1 className="font-FjallaOne text-[108px] leading-[8.5vw] font-semibold text-black ">
                         {item}
