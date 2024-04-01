@@ -16,8 +16,12 @@ const Play = () => {
   });
   return (
     <>
-      <div className="relative cursor-pointer">
-        <div className=' bg-[url("src/assets/Top-Viewbbcbv-1-1440x921.jpg")] bg-cover bg-center h-screen w-full'></div>
+      <div className="relative cursor-pointer h-screen">
+        <div
+          data-scroll
+          data-scroll-speed="-.7"
+          className='absolute -z-20 bg-[url("src/assets/Top-Viewbbcbv-1-1440x921.jpg")] bg-cover bg-center h-screen w-full'
+        ></div>
         <div className="gap-x-9 flex items-center justify-center absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
           <div className="w-52 h-52 bg-white rounded-full flex items-center justify-center">
             <div className="w-32 h-32 bg-black rounded-full relative">
