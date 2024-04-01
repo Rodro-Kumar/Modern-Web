@@ -1,11 +1,15 @@
-import React from "react";
+import React, { useState } from "react";
 import Btn2 from "./Common/Btn2";
 import { GoArrowUpRight } from "react-icons/go";
+import { motion } from "framer-motion";
 
 const Feature = () => {
+  const [isHovering, setHovering] = useState(false);
+  const [isHovering2, setHovering2] = useState(false);
+
   return (
     <>
-      <div className="py-28">
+      <div className="py-28 bg-white">
         <div className="container">
           <h3 className="text-[52px] font-['Neue_Montreal'] font-normal pb-8">
             Featured projects
@@ -22,16 +26,30 @@ const Feature = () => {
                   </p>
                 </div>
                 <div className="group relative w-[629px] h-[500px] rounded-2xl cursor-pointer">
-                  <div className="w-full h-full bg-green-800 overflow-hidden rounded-2xl">
+                  <div
+                    onMouseEnter={() => setHovering(true)}
+                    onMouseLeave={() => setHovering(false)}
+                    className="w-full h-full bg-green-800 overflow-hidden rounded-2xl"
+                  >
                     <img
                       className="bg-cover h-full w-full bg-center"
                       src="https://ochi.design/wp-content/uploads/2023/10/Fyde_Illustration_Crypto_2-663x551.png"
                       alt=""
                     />
                   </div>
-                  <h2 className="absolute left-full text-9xl z-20 top-1/2 -translate-x-[50%] -translate-y-[50%] font-semibold text-[#cdea68] font-FamiljenGrotesk tracking-tight">
+                  <h2 className="absolute left-full text-9xl z-20 top-1/2 -translate-x-[50%] -translate-y-[50%] font-semibold text-[#cdea68] flex overflow-hidden font-FamiljenGrotesk tracking-tight">
                     {"FYDE".split("").map((item, index) => (
-                      <span>{item}</span>
+                      <motion.span
+                        initial={{ y: "100%" }}
+                        animate={isHovering ? { y: "0" } : { y: "100%" }}
+                        transition={{
+                          ease: [0.22, 1, 0.36, 1],
+                          delay: index * 0.06,
+                        }}
+                        className="inline-block"
+                      >
+                        {item}
+                      </motion.span>
                     ))}
                   </h2>
                   <div className="flex items-center gap-x-3 pt-4">
@@ -44,23 +62,40 @@ const Feature = () => {
               </div>
 
               <div>
-                <div className="flex  gap-x-2 items-center mb-4">
+                <div className="flex gap-x-2 items-center mb-4">
                   <div className="w-3 h-3 rounded-full bg-black"></div>
                   <p className="text-base font-['Neue_Montreal'] font-normal">
                     VISE
                   </p>
                 </div>
                 <div className="relative w-[629px] h-[500px] rounded-2xl cursor-pointer">
-                  <div className="w-full h-full bg-green-800 rounded-2xl overflow-hidden">
-                    <img
+                  <div
+                    onMouseEnter={() => setHovering2(true)}
+                    onMouseLeave={() => setHovering2(false)}
+                    className="w-full h-full bg-green-800 rounded-2xl overflow-hidden"
+                  >
+                    <motion.img
+                      animate={isHovering2 ? { scale: "2" } : { scale: "1" }}
+                      transition={{ ease: [0.22, 1, 0.36, 1] }}
                       className="h-full w-full bg-cover bg-center"
                       src="https://ochi.design/wp-content/uploads/2022/09/Vise_front2-663x551.jpg"
                       alt=""
                     />
                   </div>
-                  <h2 className="absolute right-full text-9xl z-30 top-1/2 translate-x-[50%] -translate-y-[50%] font-semibold text-[#cdea68] font-FamiljenGrotesk tracking-tight">
+                  <h2 className="absolute right-full text-9xl z-30 top-1/2 translate-x-[50%] -translate-y-[50%] font-semibold text-[#cdea68] overflow-hidden flex font-FamiljenGrotesk tracking-tight">
                     {"VISE".split("").map((item, index) => (
-                      <span key={index}>{item}</span>
+                      <motion.span
+                        initial={{ y: "100%" }}
+                        animate={isHovering2 ? { y: "0" } : { y: "100%" }}
+                        transition={{
+                          ease: [0.22, 1, 0.36, 1],
+                          delay: index * 0.06,
+                        }}
+                        className="inline-block"
+                        key={index}
+                      >
+                        {item}
+                      </motion.span>
                     ))}
                   </h2>
                   <div className="flex items-center gap-x-3 pt-4">
