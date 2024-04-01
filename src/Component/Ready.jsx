@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import { RxArrowTopRight } from "react-icons/rx";
 
 const Ready = () => {
   const [rotate, setrotate] = useState(0);
@@ -57,6 +58,23 @@ const Ready = () => {
                 </div>
               </div>
             </div>
+          </div>
+          <div className="flex flex-col items-center justify-center gap-y-4 mt-8">
+            <button className="z-10 relative group start-project-btn text-white bg-[#272727] rounded-full py-[10px] pl-6 uppercase text-base font-normal flex items-center gap-x-[17px] overflow-hidden">
+              <a href="#">start the project</a>
+              <div className="round w-12 h-12 bg-white scale-[0.3] rounded-full mr-3 flex items-center justify-center text-black text-2xl  group-hover:scale-[1]">
+                <RxArrowTopRight className="opacity-0 group-hover:opacity-[1] icon" />
+              </div>
+            </button>
+            <p className="text-base font-normal font-['Neue_Montreal'] uppercase">
+              or
+            </p>
+            <button className="z-10 relative group start-project-btn text-black border-2 border-black bg-transparent rounded-full py-[10px] pl-6 uppercase text-base font-normal flex items-center gap-x-[17px] overflow-hidden hover:text-white">
+              <a href="#">hello@ochi.design</a>
+              <div className="round w-12 h-12 bg-black scale-[0.3] rounded-full mr-3 flex items-center justify-center text-black text-2xl  group-hover:scale-[1] group-hover:bg-white">
+                <RxArrowTopRight className="opacity-0 group-hover:opacity-[1] icon" />
+              </div>
+            </button>
           </div>
         </div>
       </div>
