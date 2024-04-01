@@ -3,7 +3,7 @@ import React from "react";
 const Nav = () => {
   return (
     <>
-      <div>
+      <div className="fixed z-[999] w-full top-0">
         <div className="container py-4 flex justify-between items-center">
           <div className="cursor-pointer">
             <svg
