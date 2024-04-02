@@ -25,39 +25,40 @@ const Feature = () => {
                     FYDE
                   </p>
                 </div>
-                <div className="group relative w-[629px] h-[500px] rounded-2xl cursor-pointer">
+                <div className="group relative feature-vise w-[629px] h-[500px] rounded-2xl cursor-pointer hover:scale-95">
                   <div
-                    onMouseEnter={() => setHovering(true)}
-                    onMouseLeave={() => setHovering(false)}
+                    onMouseEnter={() => setHovering2(true)}
+                    onMouseLeave={() => setHovering2(false)}
                     className="w-full h-full bg-green-800 overflow-hidden rounded-2xl"
                   >
                     <img
-                      className="bg-cover h-full w-full bg-center"
+                      className="bg-cover h-full w-full bg-center group-hover:scale-110"
                       src="https://ochi.design/wp-content/uploads/2023/10/Fyde_Illustration_Crypto_2-663x551.png"
                       alt=""
                     />
                   </div>
-                  <h2 className="absolute left-full text-9xl z-20 top-1/2 -translate-x-[50%] -translate-y-[50%] font-semibold text-[#cdea68] flex overflow-hidden font-FamiljenGrotesk tracking-tight">
+                  <h2 className="absolute text-9xl z-[50] top-1/2 left-full -translate-x-[50%] -translate-y-[50%] font-semibold text-[#cdea68] flex overflow-hidden font-FamiljenGrotesk tracking-tight">
                     {"FYDE".split("").map((item, index) => (
                       <motion.span
                         initial={{ y: "100%" }}
-                        animate={isHovering ? { y: "0" } : { y: "100%" }}
+                        animate={isHovering2 ? { y: "0" } : { y: "100%" }}
                         transition={{
                           ease: [0.22, 1, 0.36, 1],
                           delay: index * 0.06,
                         }}
-                        className="inline-block"
+                        className={`inline-block`}
+                        key={index}
                       >
                         {item}
                       </motion.span>
                     ))}
                   </h2>
-                  <div className="flex items-center gap-x-3 pt-4">
-                    <Btn2 BtnTitle={"audit"} />
-                    <Btn2 BtnTitle={"copywriting"} />
-                    <Btn2 BtnTitle={"sales deck"} />
-                    <Btn2 BtnTitle={"slides design"} />
-                  </div>
+                </div>
+                <div className="flex items-center gap-x-3 pt-4">
+                  <Btn2 BtnTitle={"audit"} />
+                  <Btn2 BtnTitle={"copywriting"} />
+                  <Btn2 BtnTitle={"sales deck"} />
+                  <Btn2 BtnTitle={"slides design"} />
                 </div>
               </div>
 
@@ -68,25 +69,23 @@ const Feature = () => {
                     VISE
                   </p>
                 </div>
-                <div className="relative w-[629px] h-[500px] rounded-2xl cursor-pointer">
+                <div className="group relative feature-vise w-[629px] h-[500px] rounded-2xl cursor-pointer hover:scale-95">
                   <div
-                    onMouseEnter={() => setHovering2(true)}
-                    onMouseLeave={() => setHovering2(false)}
+                    onMouseEnter={() => setHovering(true)}
+                    onMouseLeave={() => setHovering(false)}
                     className="w-full h-full bg-green-800 rounded-2xl overflow-hidden"
                   >
-                    <motion.img
-                      animate={isHovering2 ? { scale: "2" } : { scale: "1" }}
-                      transition={{ ease: [0.22, 1, 0.36, 1] }}
-                      className="h-full w-full bg-cover bg-center"
+                    <img
+                      className="h-full w-full bg-cover bg-center group-hover:scale-110"
                       src="https://ochi.design/wp-content/uploads/2022/09/Vise_front2-663x551.jpg"
                       alt=""
                     />
                   </div>
-                  <h2 className="absolute right-full text-9xl z-30 top-1/2 translate-x-[50%] -translate-y-[50%] font-semibold text-[#cdea68] overflow-hidden flex font-FamiljenGrotesk tracking-tight">
+                  <h2 className="absolute right-full text-9xl z-[999] top-1/2 translate-x-[50%] -translate-y-[50%] font-semibold text-[#cdea68] overflow-hidden flex font-FamiljenGrotesk tracking-tight">
                     {"VISE".split("").map((item, index) => (
                       <motion.span
                         initial={{ y: "100%" }}
-                        animate={isHovering2 ? { y: "0" } : { y: "100%" }}
+                        animate={isHovering ? { y: "0" } : { y: "100%" }}
                         transition={{
                           ease: [0.22, 1, 0.36, 1],
                           delay: index * 0.06,
@@ -98,10 +97,10 @@ const Feature = () => {
                       </motion.span>
                     ))}
                   </h2>
-                  <div className="flex items-center gap-x-3 pt-4">
-                    <Btn2 BtnTitle={"agency"} />
-                    <Btn2 BtnTitle={"company presentation"} />
-                  </div>
+                </div>
+                <div className="flex items-center gap-x-3 pt-4">
+                  <Btn2 BtnTitle={"agency"} />
+                  <Btn2 BtnTitle={"company presentation"} />
                 </div>
               </div>
             </div>
