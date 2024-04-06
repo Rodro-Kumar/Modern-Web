@@ -3,7 +3,7 @@ import React from "react";
 const Footer = () => {
   return (
     <>
-      <div className="bg-white py-20">
+      <div className="bg-white py-20 common">
         <div className="container">
           <div className="flex justify-between">
             <div className="relative">
@@ -23,32 +23,41 @@ const Footer = () => {
                 <li className="text-base font-['Neue_Montreal'] font-normal pb-2">
                   S:
                 </li>
-                <li className="flex flex-col pb-5">
-                  <a
-                    href="#"
-                    className="font-['Neue_Montreal'] text-base font-normal"
-                  >
-                    Instagram
-                  </a>
-                  <a
-                    href="#"
-                    className="font-['Neue_Montreal'] text-base font-normal"
-                  >
-                    Behance
-                  </a>
-                  <a
-                    href="#"
-                    className="font-['Neue_Montreal'] text-base font-normal"
-                  >
-                    Facebook
-                  </a>
-                  <a
-                    href="#"
-                    className="font-['Neue_Montreal'] text-base font-normal"
-                  >
-                    Linkedin
-                  </a>
-                </li>
+                <ul className="flex flex-col pb-5">
+                  <li>
+                    <a
+                      href="#"
+                      className="font-['Neue_Montreal'] text-base font-normal"
+                    >
+                      Instagram
+                    </a>
+                  </li>
+
+                  <li>
+                    <a
+                      href="#"
+                      className="font-['Neue_Montreal'] text-base font-normal"
+                    >
+                      Instagram
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="#"
+                      className="font-['Neue_Montreal'] text-base font-normal"
+                    >
+                      Instagram
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="#"
+                      className="font-['Neue_Montreal'] text-base font-normal"
+                    >
+                      Instagram
+                    </a>
+                  </li>
+                </ul>
               </ul>
 
               <div className="flex justify-between">
@@ -57,32 +66,40 @@ const Footer = () => {
                     <li className="text-base font-['Neue_Montreal'] font-normal pb-2">
                       L:
                     </li>
-                    <li className="flex flex-col pb-5">
-                      <a
-                        href="#"
-                        className="font-['Neue_Montreal'] text-base font-normal"
-                      >
-                        202-1965 W 4th Ave
-                      </a>
-                      <a
-                        href="#"
-                        className="font-['Neue_Montreal'] text-base font-normal"
-                      >
-                        Vancouver, Canada
-                      </a>
-                      <a
-                        href="#"
-                        className="font-['Neue_Montreal'] text-base font-normal pt-4"
-                      >
-                        30 Chukarina St
-                      </a>
-                      <a
-                        href="#"
-                        className="font-['Neue_Montreal'] text-base font-normal"
-                      >
-                        Lviv, Ukraine
-                      </a>
-                    </li>
+                    <ul className="flex flex-col pb-5">
+                      <li>
+                        <a
+                          href="#"
+                          className="font-['Neue_Montreal'] text-base font-normal"
+                        >
+                          Instagram
+                        </a>
+                      </li>
+                      <li>
+                        <a
+                          href="#"
+                          className="font-['Neue_Montreal'] text-base font-normal"
+                        >
+                          Instagram
+                        </a>
+                      </li>
+                      <li>
+                        <a
+                          href="#"
+                          className="font-['Neue_Montreal'] text-base font-normal"
+                        >
+                          Instagram
+                        </a>
+                      </li>
+                      <li>
+                        <a
+                          href="#"
+                          className="font-['Neue_Montreal'] text-base font-normal"
+                        >
+                          Instagram
+                        </a>
+                      </li>
+                    </ul>
                   </ul>
                 </div>
                 <div className="flex flex-col">
@@ -90,44 +107,56 @@ const Footer = () => {
                     <li className="text-base font-['Neue_Montreal'] font-normal pb-2">
                       M:
                     </li>
-                    <li className="flex flex-col">
-                      <a
-                        href="#"
-                        className="font-['Neue_Montreal'] text-base font-normal"
-                      >
-                        Home
-                      </a>
-                      <a
-                        href="#"
-                        className="font-['Neue_Montreal'] text-base font-normal"
-                      >
-                        Services
-                      </a>
-                      <a
-                        href="#"
-                        className="font-['Neue_Montreal'] text-base font-normal"
-                      >
-                        Our work
-                      </a>
-                      <a
-                        href="#"
-                        className="font-['Neue_Montreal'] text-base font-normal"
-                      >
-                        About us
-                      </a>
-                      <a
-                        href="#"
-                        className="font-['Neue_Montreal'] text-base font-normal"
-                      >
-                        Insights
-                      </a>
-                      <a
-                        href="#"
-                        className="font-['Neue_Montreal'] text-base font-normal"
-                      >
-                        Contact us
-                      </a>
-                    </li>
+                    <ul className="flex flex-col">
+                      <li>
+                        <a
+                          href="#"
+                          className="font-['Neue_Montreal'] text-base font-normal"
+                        >
+                          Instagram
+                        </a>
+                      </li>
+                      <li>
+                        <a
+                          href="#"
+                          className="font-['Neue_Montreal'] text-base font-normal"
+                        >
+                          Instagram
+                        </a>
+                      </li>
+                      <li>
+                        <a
+                          href="#"
+                          className="font-['Neue_Montreal'] text-base font-normal"
+                        >
+                          Instagram
+                        </a>
+                      </li>
+                      <li>
+                        <a
+                          href="#"
+                          className="font-['Neue_Montreal'] text-base font-normal"
+                        >
+                          Instagram
+                        </a>
+                      </li>
+                      <li>
+                        <a
+                          href="#"
+                          className="font-['Neue_Montreal'] text-base font-normal"
+                        >
+                          Instagram
+                        </a>
+                      </li>
+                      <li>
+                        <a
+                          href="#"
+                          className="font-['Neue_Montreal'] text-base font-normal"
+                        >
+                          Instagram
+                        </a>
+                      </li>
+                    </ul>
                   </ul>
                 </div>
               </div>
