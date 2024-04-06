@@ -6,6 +6,8 @@ import { motion } from "framer-motion";
 const Feature = () => {
   const [isHovering, setHovering] = useState(false);
   const [isHovering2, setHovering2] = useState(false);
+  const [isHovering3, setHovering3] = useState(false);
+  const [isHovering4, setHovering4] = useState(false);
 
   return (
     <>
@@ -17,7 +19,7 @@ const Feature = () => {
         </div>
         <div className="border-t border-[#0000007c] py-12">
           <div className="container">
-            <div className="flex items-center justify-between">
+            <div className="relative flex items-center justify-between">
               <div>
                 <div className="flex items-center gap-x-2 mb-4">
                   <div className="w-3 h-3 rounded-full bg-black"></div>
@@ -25,28 +27,32 @@ const Feature = () => {
                     FYDE
                   </p>
                 </div>
-                <div className="group relative feature-vise w-[629px] h-[500px] rounded-2xl cursor-pointer hover:scale-95">
+                <div
+                  className={`group relative feature w-[629px] h-[500px] rounded-2xl cursor-pointer hover:scale-95 ${
+                    isHovering2 && "z-40"
+                  }`}
+                >
                   <div
                     onMouseEnter={() => setHovering2(true)}
                     onMouseLeave={() => setHovering2(false)}
-                    className="w-full h-full bg-green-800 overflow-hidden rounded-2xl"
+                    className="w-full h-full bg-green-800 rounded-2xl overflow-hidden"
                   >
                     <img
-                      className="bg-cover h-full w-full bg-center group-hover:scale-110"
+                      className="h-full w-full bg-cover bg-center group-hover:scale-110"
                       src="https://ochi.design/wp-content/uploads/2023/10/Fyde_Illustration_Crypto_2-663x551.png"
                       alt=""
                     />
                   </div>
-                  <h2 className="absolute text-9xl z-[50] top-1/2 left-full -translate-x-[50%] -translate-y-[50%] font-semibold text-[#cdea68] flex overflow-hidden font-FamiljenGrotesk tracking-tight">
+                  <h2 className="absolute left-full text-9xl z-50 top-1/2 -translate-x-[50%] -translate-y-[50%] font-semibold text-[#cdea68] overflow-hidden flex font-FamiljenGrotesk tracking-tight">
                     {"FYDE".split("").map((item, index) => (
                       <motion.span
                         initial={{ y: "100%" }}
                         animate={isHovering2 ? { y: "0" } : { y: "100%" }}
                         transition={{
                           ease: [0.22, 1, 0.36, 1],
-                          delay: index * 0.06,
+                          delay: index * 0.02,
                         }}
-                        className={`inline-block`}
+                        className="inline-block"
                         key={index}
                       >
                         {item}
@@ -69,7 +75,7 @@ const Feature = () => {
                     VISE
                   </p>
                 </div>
-                <div className="group relative feature-vise w-[629px] h-[500px] rounded-2xl cursor-pointer hover:scale-95">
+                <div className="group relative feature w-[629px] h-[500px] rounded-2xl cursor-pointer hover:scale-95">
                   <div
                     onMouseEnter={() => setHovering(true)}
                     onMouseLeave={() => setHovering(false)}
@@ -81,14 +87,14 @@ const Feature = () => {
                       alt=""
                     />
                   </div>
-                  <h2 className="absolute right-full text-9xl z-[999] top-1/2 translate-x-[50%] -translate-y-[50%] font-semibold text-[#cdea68] overflow-hidden flex font-FamiljenGrotesk tracking-tight">
+                  <h2 className="absolute right-full text-9xl z-[50] top-1/2 translate-x-[50%] -translate-y-[50%] font-semibold text-[#cdea68] overflow-hidden flex font-FamiljenGrotesk tracking-tight">
                     {"VISE".split("").map((item, index) => (
                       <motion.span
                         initial={{ y: "100%" }}
                         animate={isHovering ? { y: "0" } : { y: "100%" }}
                         transition={{
                           ease: [0.22, 1, 0.36, 1],
-                          delay: index * 0.06,
+                          delay: index * 0.02,
                         }}
                         className="inline-block"
                         key={index}
@@ -112,24 +118,41 @@ const Feature = () => {
                     TRAWA
                   </p>
                 </div>
-                <div className="group relative w-[629px] h-[500px] rounded-2xl cursor-pointer">
+                <div
+                  onMouseEnter={() => setHovering3(true)}
+                  onMouseLeave={() => setHovering3(false)}
+                  className={`group feature relative w-[629px] h-[500px] rounded-2xl cursor-pointer hover:scale-95 ${
+                    isHovering3 && "z-30"
+                  }`}
+                >
                   <div className="w-full h-full bg-green-800 overflow-hidden rounded-2xl">
                     <img
-                      className="bg-cover h-full w-full bg-center"
+                      className="bg-cover h-full w-full bg-center group-hover:scale-110"
                       src="https://ochi.design/wp-content/uploads/2023/08/Frame-3875-663x551.jpg"
                       alt=""
                     />
                   </div>
-                  <h2 className="absolute left-full text-9xl z-20 top-1/2 -translate-x-[50%] -translate-y-[50%] font-semibold text-[#cdea68] font-FamiljenGrotesk tracking-tight">
+                  <h2 className="absolute left-full text-9xl z-20 top-1/2 -translate-x-[50%] -translate-y-[50%] font-semibold text-[#cdea68] font-FamiljenGrotesk tracking-tight flex overflow-hidden items-center">
                     {"TRAWA".split("").map((item, index) => (
-                      <span>{item}</span>
+                      <motion.span
+                        initial={{ y: "100%" }}
+                        animate={isHovering3 ? { y: "0" } : { y: "100%" }}
+                        transition={{
+                          ease: [0.22, 1, 0.36, 1],
+                          delay: index * 0.02,
+                        }}
+                        key={index}
+                        className="inline-block"
+                      >
+                        {item}
+                      </motion.span>
                     ))}
                   </h2>
-                  <div className="flex items-center gap-x-3 pt-4">
-                    <Btn2 BtnTitle={"brand identity"} />
-                    <Btn2 BtnTitle={"design research"} />
-                    <Btn2 BtnTitle={"investor deck"} />
-                  </div>
+                </div>
+                <div className="flex items-center gap-x-3 pt-4">
+                  <Btn2 BtnTitle={"brand identity"} />
+                  <Btn2 BtnTitle={"design research"} />
+                  <Btn2 BtnTitle={"investor deck"} />
                 </div>
               </div>
 
@@ -140,22 +163,37 @@ const Feature = () => {
                     PREMIUM BLEND
                   </p>
                 </div>
-                <div className="relative w-[629px] h-[500px] rounded-2xl cursor-pointer">
+                <div
+                  onMouseEnter={() => setHovering4(true)}
+                  onMouseLeave={() => setHovering4(false)}
+                  className="group feature relative w-[629px] h-[500px] rounded-2xl cursor-pointer hover:scale-95"
+                >
                   <div className="w-full h-full bg-green-800 rounded-2xl overflow-hidden">
                     <img
-                      className="h-full w-full bg-cover bg-center"
+                      className="h-full w-full bg-cover bg-center group-hover:scale-110"
                       src="https://ochi.design/wp-content/uploads/2022/12/PB-Front-4-663x551.png"
                       alt=""
                     />
                   </div>
-                  <h2 className="absolute right-full text-9xl z-30 top-1/2 translate-x-[50%] -translate-y-[50%] font-semibold text-[#cdea68] font-FamiljenGrotesk tracking-tight">
+                  <h2 className="absolute right-full text-9xl z-30 top-1/2 translate-x-[50%] -translate-y-[50%] font-semibold text-[#cdea68] font-FamiljenGrotesk tracking-tight flex overflow-hidden items-center">
                     {"PREMIUMBLEND".split("").map((item, index) => (
-                      <span key={index}>{item}</span>
+                      <motion.spna
+                        initial={{ y: "100%" }}
+                        animate={isHovering4 ? { y: "0" } : { y: "100%" }}
+                        transition={{
+                          ease: [0.22, 1, 0.36, 1],
+                          delay: index * 0.02,
+                        }}
+                        key={index}
+                        className="inline-block"
+                      >
+                        {item}
+                      </motion.spna>
                     ))}
                   </h2>
-                  <div className="flex items-center gap-x-3 pt-4">
-                    <Btn2 BtnTitle={"branded template"} />
-                  </div>
+                </div>
+                <div className="flex items-center gap-x-3 pt-4">
+                  <Btn2 BtnTitle={"branded template"} />
                 </div>
               </div>
             </div>
