@@ -4,7 +4,7 @@ import Button from "./Common/Btn2";
 const Card = () => {
   return (
     <>
-      <div className="pb-60 ">
+      <div className="pb-60">
         <div className="container">
           <div className="flex gap-x-5">
             <div className="relative h-[380px] w-1/2 bg-[#004d43] rounded-xl flex items-center justify-center flex-col">
