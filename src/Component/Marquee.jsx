@@ -4,7 +4,12 @@ import React from "react";
 const Marquee = () => {
   return (
     <>
-      <div className="bg-[#004d43] w-full py-24 mt-24 rounded-tl-lg rounded-tr-lg">
+      <div
+        data-scroll
+        data-scroll-section
+        data-scroll-speed=".3"
+        className="bg-[#004d43] w-full py-24 mt-24 rounded-tl-lg rounded-tr-lg"
+      >
         <div className="flex whitespace-nowrap overflow-hidden items-center">
           {["WE ARE OCHI", "WE ARE OCHI"].map((item, index) => {
             return (
