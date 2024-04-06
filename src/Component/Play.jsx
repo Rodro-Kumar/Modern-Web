@@ -19,6 +19,7 @@ const Play = () => {
       <div className="relative cursor-pointer h-screen">
         <div
           data-scroll
+          data-scroll-section
           data-scroll-speed="-.7"
           className='absolute -z-20 bg-[url("src/assets/Top-Viewbbcbv-1-1440x921.jpg")] bg-cover bg-center h-screen w-full'
         ></div>
