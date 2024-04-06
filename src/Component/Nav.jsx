@@ -3,7 +3,7 @@ import React from "react";
 const Nav = () => {
   return (
     <>
-      <div className="fixed z-[999] w-full top-0">
+      <div className="fixed z-[999] w-full top-0 bg-[#ffffff25] backdrop-blur-md">
         <div className="container py-4 flex justify-between items-center">
           <div className="cursor-pointer">
             <svg
@@ -35,49 +35,56 @@ const Nav = () => {
               ></path>
             </svg>
           </div>
-          <div className="links">
-            <ul className="flex items-center gap-x-6">
-              <li>
-                <a
-                  href="#"
-                  className="font-[Neue Montreal] font-normal text-base"
-                >
-                  Services
-                </a>
-              </li>
-              <li>
-                <a
-                  href="#"
-                  className="font-[Neue Montreal] font-normal text-base"
-                >
-                  Our work
-                </a>
-              </li>
-              <li>
-                <a
-                  href="#"
-                  className="font-[Neue Montreal] font-normal text-base"
-                >
-                  About us
-                </a>
-              </li>
-              <li>
-                <a
-                  href="#"
-                  className="font-[Neue Montreal] font-normal text-base"
-                >
-                  Insights
-                </a>
-              </li>
-              <li>
-                <a
-                  href="#"
-                  className="ml-48 font-[Neue Montreal] font-normal text-base"
-                >
-                  Contact us
-                </a>
-              </li>
-            </ul>
+          <div className="">
+            <div className="links">
+              <ul className="flex items-center gap-x-6">
+                <li>
+                  <a
+                    href="#"
+                    data-link-alt="Services"
+                    className="font-[Neue Montreal] font-normal text-base"
+                  >
+                    <span>Services</span>
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    data-link-alt="Our work"
+                    className="font-[Neue Montreal] font-normal text-base"
+                  >
+                    <span>Our work</span>
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    data-link-alt="About us"
+                    className="font-[Neue Montreal] font-normal text-base"
+                  >
+                    About us
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    data-link-alt="Insights"
+                    className="font-[Neue Montreal] font-normal text-base"
+                  >
+                    Insights
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    data-link-alt="Contact us"
+                    className="ml-48 font-[Neue Montreal] font-normal text-base"
+                  >
+                    Contact us
+                  </a>
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
       </div>
