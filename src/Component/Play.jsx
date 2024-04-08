@@ -17,15 +17,18 @@ const Play = () => {
   return (
     <>
       <div className="relative cursor-pointer h-screen">
-        <div
-          data-scroll
-          data-scroll-section
-          data-scroll-speed="-.7"
-          className='absolute -z-20 bg-[url("src/assets/Top-Viewbbcbv-1-1440x921.jpg")] bg-cover bg-center h-screen w-full'
-        ></div>
+        <div className="w-full">
+          <div
+            // data-scroll
+            // data-scroll-section
+            // data-scroll-speed="-.7"
+            className='absolute -z-20 bg-[url("src/assets/Top-Viewbbcbv-1-1440x921.jpg")] object-cover bg-center w-full h-full'
+          ></div>
+        </div>
+
         <div className="gap-x-9 flex items-center justify-center absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
-          <div className="w-52 h-52 bg-white rounded-full flex items-center justify-center">
-            <div className="w-32 h-32 bg-black rounded-full relative">
+          <div className="w-40 sm:w-52 h-40 sm:h-52 bg-white rounded-full flex items-center justify-center">
+            <div className="w-24 sm:w-32 h-24 sm:h-32 bg-black rounded-full relative">
               <div
                 style={{
                   transform: `translate(-50% , -50%) rotate(${rotate}deg)`,
@@ -39,8 +42,8 @@ const Play = () => {
               </p>
             </div>
           </div>
-          <div className="w-52 h-52 bg-white rounded-full flex items-center justify-center">
-            <div className="w-32 h-32 bg-black rounded-full relative">
+          <div className="w-40 sm:w-52 h-40 sm:h-52 bg-white rounded-full flex items-center justify-center">
+            <div className="w-24 sm:w-32 h-24 sm:h-32 bg-black rounded-full relative">
               <div
                 style={{
                   transform: `translate(-50% , -50%) rotate(${rotate}deg)`,
