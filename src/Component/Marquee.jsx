@@ -5,10 +5,10 @@ const Marquee = () => {
   return (
     <>
       <div
-        data-scroll
-        data-scroll-section
-        data-scroll-speed=".3"
-        className="bg-[#004d43] w-full py-24 mt-24 rounded-tl-lg rounded-tr-lg"
+        // data-scroll
+        // data-scroll-section
+        // data-scroll-speed=".4"
+        className="bg-[#004d43] w-full py-10 sm:py-24 mt-24 rounded-tl-lg rounded-tr-lg"
       >
         <div className="flex whitespace-nowrap overflow-hidden items-center">
           {["WE ARE OCHI", "WE ARE OCHI"].map((item, index) => {
@@ -20,9 +20,9 @@ const Marquee = () => {
                   transition={{
                     ease: "linear",
                     repeat: Infinity,
-                    duration: 10,
+                    duration: 5,
                   }}
-                  className="text-white text-[300px] font-['Founders_Grotesk_X-Condensed] font-bold leading-none tracking-tighter"
+                  className="text-white text-[100px] sm:text-[300px] font-['Founders_Grotesk_X-Condensed] font-bold leading-none tracking-tighter"
                 >
                   {item}
                 </motion.div>
