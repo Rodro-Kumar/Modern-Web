@@ -7,7 +7,7 @@ const Hero = () => {
     <>
       <div className="mt-[112px]">
         <div className="container">
-          <div className="heading">
+          <div className="heading px-4">
             {["WE CREATE", "EYE-OPENING", "PRESENTATIONS"].map(
               (item, index) => {
                 return (
@@ -16,15 +16,15 @@ const Hero = () => {
                       {index === 1 && (
                         <motion.div
                           initial={{ width: 0 }}
-                          animate={{ width: "144px" }}
+                          animate={{ width: "100px" }}
                           transition={{
                             ease: [0.76, 0, 0.24, 1],
                             duration: 1,
                           }}
-                          className="w-36 h-[96px] bg-[url('https://ochi.design/wp-content/uploads/2022/04/content-image01.jpg')] bg-cover bg-center mb-2 rounded-lg mr-3"
+                          className="w-[55px] sm:w-36 h-[38px] sm:h-[96px] bg-[url('https://ochi.design/wp-content/uploads/2022/04/content-image01.jpg')] bg-cover bg-center mb-2 rounded-lg mr-3"
                         ></motion.div>
                       )}
-                      <h1 className="font-FjallaOne text-[108px] leading-[8.5vw] font-semibold text-black ">
+                      <h1 className="font-FjallaOne text-[40px] sm:text-[108px] leading-[8.5vw] font-semibold text-black">
                         {item}
                       </h1>
                     </div>
@@ -34,8 +34,8 @@ const Hero = () => {
             )}
           </div>
         </div>
-        <div className="border-t-[1px] border-[#00000044] mt-[256px] py-4">
-          <div className="container flex justify-between items-center">
+        <div className="border-t-[1px] border-[#00000044] mt-[100px] py-4 sm:mt-[256px]">
+          <div className="container px-4 sm:px-0 gap-y-6 sm:gap-y-0 flex justify-between items-start flex-col sm:flex-row sm:items-center">
             {[
               "For public and private companies",
               "From the first pitch to IPO",
