@@ -5,40 +5,75 @@ const Reviews = () => {
   return (
     <>
       <div>
-        <div className="container">
-          <h2 className="font-['Neue_Montreal'] text-[52px] font-normal pb-10">
+        <div className="container px-4 sm:px-0">
+          <h2 className="font-['Neue_Montreal'] text-[32px] sm:text-[52px] font-normal pb-10">
             Clients’ reviews
           </h2>
         </div>
-        <div className="border-t-2 border-[#00000081]">
-          <div className="container">
-            <div className="flex items-center justify-between pt-4">
-              <div className="flex items-center">
-                <a
-                  href="#"
-                  className="Karman relative font-['Neue_Montreal'] text-base font-normal"
-                >
-                  Karman Ventures
-                </a>
-                <p className="font-['Neue_Montreal'] text-base font-normal ml-[180px]">
-                  Services:
-                </p>
-                <p className="font-['Neue_Montreal'] text-base font-normal ml-[258px]">
-                  William Barnes
-                </p>
-              </div>
+        <div className="border-t-2 border-[#00000081] common">
+          <div className="container px-4 sm:px-0">
+            <div className="hidden sm:block">
+              <div className="flex items-center justify-between pt-4 ">
+                <ul className="flex items-center">
+                  <a
+                    href="#"
+                    className="Karman relative font-['Neue_Montreal'] text-base font-normal"
+                  >
+                    Karman Ventures
+                  </a>
+                  <p className="font-['Neue_Montreal'] text-base font-normal ml-[180px]">
+                    Services:
+                  </p>
+                  <p className="font-['Neue_Montreal'] text-base font-normal ml-[258px]">
+                    William Barnes
+                  </p>
+                </ul>
 
-              <div>
-                <a
-                  href=""
-                  className="font-['Neue_Montreal'] text-base font-medium text-[#0000004b]"
-                >
-                  READ
-                </a>
+                <div>
+                  <a
+                    href=""
+                    className="font-['Neue_Montreal'] text-base font-medium text-[#0000004b]"
+                  >
+                    READ
+                  </a>
+                </div>
               </div>
             </div>
-            <div className="py-12 flex justify-center gap-x-32">
-              <div className="flex flex-col gap-y-3">
+
+            <div className="block sm:hidden ">
+              <div className="flex items-start justify-between pt-4">
+                <ul className="flex items-start flex-col sm:flex-row w-full">
+                  <div className="flex items-start justify-between w-full">
+                    <div>
+                      <a
+                        href="#"
+                        className="Karman relative font-['Neue_Montreal'] text-base font-normal"
+                      >
+                        Karman Ventures
+                      </a>
+                    </div>
+                    <div>
+                      <a
+                        href=""
+                        className="font-['Neue_Montreal'] text-base font-medium text-[#0000004b]"
+                      >
+                        READ
+                      </a>
+                    </div>
+                  </div>
+
+                  {/* <p className="font-['Neue_Montreal'] text-base font-normal ml-[258px]">
+                    William Barnes
+                  </p> */}
+                  <p className="font-['Neue_Montreal'] text-base font-normal sm:ml-[180px] ml-0">
+                    Services:
+                  </p>
+                </ul>
+              </div>
+            </div>
+
+            <div className="py-12 flex justify-center gap-x-32 flex-col sm:flex-row">
+              <div className="flex flex-row gap-x-3 sm:gap-y-3 sm:flex-col">
                 <div className="group flex items-center gap-x-2">
                   <button className="py-[6px] px-4 border-[3px] bg-[#0000] border-[#00000067] rounded-full text-black font-['Neue_Montreal'] hover:bg-[#000] hover:text-white transition-all cursor-pointer">
                     <a href="#">INVESTOR DECK</a>
@@ -80,9 +115,9 @@ const Reviews = () => {
           </div>
         </div>
         <div className="pb-24">
-          <div className="border-t-2 border-[#00000062]">
+          <div className="border-t-2 border-[#00000062] common">
             <div className="container">
-              <div className="flex items-center justify-between py-4">
+              <ul className="flex items-center justify-between py-4">
                 <a
                   href="#"
                   className="List-Planetly relative font-['Neue_Montreal'] text-base font-normal"
@@ -98,12 +133,12 @@ const Reviews = () => {
                 >
                   READ
                 </a>
-              </div>
+              </ul>
             </div>
           </div>
-          <div className="border-t-2 border-[#00000062]">
+          <div className="border-t-2 border-[#00000062] common">
             <div className="container">
-              <div className="flex items-center justify-between py-4">
+              <ul className="flex items-center justify-between py-4">
                 <a
                   href="#"
                   className="List-Planetly relative font-['Neue_Montreal'] text-base font-normal"
@@ -119,12 +154,12 @@ const Reviews = () => {
                 >
                   READ
                 </a>
-              </div>
+              </ul>
             </div>
           </div>
-          <div className="border-t-2 border-[#00000062]">
+          <div className="border-t-2 border-[#00000062] common">
             <div className="container">
-              <div className="flex items-center justify-between py-4">
+              <ul className="flex items-center justify-between py-4">
                 <a
                   href="#"
                   className="List-Planetly relative font-['Neue_Montreal'] text-base font-normal"
@@ -140,12 +175,12 @@ const Reviews = () => {
                 >
                   READ
                 </a>
-              </div>
+              </ul>
             </div>
           </div>
-          <div className="border-t-2 border-[#00000062]">
+          <div className="border-t-2 border-[#00000062] common">
             <div className="container">
-              <div className="flex items-center justify-between py-4">
+              <ul className="flex items-center justify-between py-4">
                 <a
                   href="#"
                   className="List-Planetly relative font-['Neue_Montreal'] text-base font-normal"
@@ -161,12 +196,12 @@ const Reviews = () => {
                 >
                   READ
                 </a>
-              </div>
+              </ul>
             </div>
           </div>
-          <div className="border-t-2 border-[#00000062]">
+          <div className="border-t-2 border-[#00000062] common">
             <div className="container">
-              <div className="flex items-center justify-between py-4">
+              <ul className="flex items-center justify-between py-4">
                 <a
                   href="#"
                   className="List-Planetly relative font-['Neue_Montreal'] text-base font-normal"
@@ -182,12 +217,12 @@ const Reviews = () => {
                 >
                   READ
                 </a>
-              </div>
+              </ul>
             </div>
           </div>
-          <div className="border-t-2 border-[#00000062]">
+          <div className="border-t-2 border-[#00000062] common">
             <div className="container">
-              <div className="flex items-center justify-between py-4">
+              <ul className="flex items-center justify-between py-4">
                 <a
                   href="#"
                   className="List-Planetly relative font-['Neue_Montreal'] text-base font-normal"
@@ -203,12 +238,12 @@ const Reviews = () => {
                 >
                   READ
                 </a>
-              </div>
+              </ul>
             </div>
           </div>
-          <div className="border-t-2 border-[#00000062]">
+          <div className="border-t-2 border-[#00000062] common">
             <div className="container">
-              <div className="flex items-center justify-between py-4">
+              <ul className="flex items-center justify-between py-4">
                 <a
                   href="#"
                   className="List-Planetly relative font-['Neue_Montreal'] text-base font-normal"
@@ -224,12 +259,12 @@ const Reviews = () => {
                 >
                   READ
                 </a>
-              </div>
+              </ul>
             </div>
           </div>
-          <div className="border-y-2 border-[#00000062]">
+          <div className="border-y-2 border-[#00000062] common">
             <div className="container">
-              <div className="flex items-center justify-between py-4">
+              <ul className="flex items-center justify-between py-4">
                 <a
                   href="#"
                   className="List-Planetly relative font-['Neue_Montreal'] text-base font-normal"
@@ -245,7 +280,7 @@ const Reviews = () => {
                 >
                   READ
                 </a>
-              </div>
+              </ul>
             </div>
           </div>
         </div>
