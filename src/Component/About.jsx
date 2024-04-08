@@ -8,14 +8,14 @@ const About = () => {
   return (
     <>
       <div
-        data-scroll
-        data-scroll-section
-        data-scroll-speed="-.4"
+        // data-scroll
+        // data-scroll-section
+        // data-scroll-speed="-.3"
         className="bg-[#cdea68] rounded-xl pt-20 pb-4 about"
       >
         <div className="pb-14 border-b border-[#00000048]">
-          <div className="container">
-            <h1 className="max-w-[1088px] text-[52px] text-black font-normal font-['Neue_Montreal'] leading-[52px]">
+          <div className="container px-4 sm:px-0">
+            <h1 className="max-w-[1088px] text-[30px] sm:text-[52px] text-black font-normal font-['Neue_Montreal'] leading-[30px] sm:leading-[52px]">
               Ochi is a strategic partner for fast-grow­ing tech businesses that
               need to{" "}
               <span className=" cursor-pointer under-hover">raise funds,</span>{" "}
@@ -33,13 +33,13 @@ const About = () => {
           </div>
         </div>
         <div className="border-b border-[#00000048] pt-4 pb-28 common">
-          <div className="container flex justify-between">
+          <div className="container flex justify-between flex-col sm:flex-row px-4 sm:px-0">
             <div>
               <p className="font-['Neue_Montreal'] text-base font-normal text-black">
                 What you can expect:
               </p>
             </div>
-            <div className="flex gap-x-28">
+            <div className="flex gap-y-10 flex-col sm:flex-row sm:gap-x-28">
               <div className="flex flex-col gap-y-12">
                 <p className="font-['Neue_Montreal'] text-base font-normal text-black max-w-[274px]">
                   We create tailored presentations to help you persuade your
@@ -95,9 +95,9 @@ const About = () => {
         </div>
         <div>
           <div className="container">
-            <div className="approach flex justify-between pb-12">
-              <div href="#">
-                <h4 className="text-[52px] font-['Neue_Montreal'] font-normal leading-none mb-7">
+            <div className="approach flex justify-between pb-12 flex-col sm:flex-row px-4 sm:px-0">
+              <div>
+                <h4 className="text-[40px] sm:text-[52px] font-['Neue_Montreal'] font-normal leading-none mb-7">
                   Our approach:
                 </h4>
                 <button
@@ -107,17 +107,17 @@ const About = () => {
                 >
                   <a
                     href="#"
-                    className="text-base font-normal text-white font-['Neue_Montreal'] inline-block"
+                    className="text-sm sm:text-base font-normal text-white font-['Neue_Montreal'] inline-block"
                   >
                     READ MORE
                   </a>
-                  <div className=" w-10 h-10 scale-[0.3] bg-white rounded-full flex items-center justify-center text-xl ml-7 group-hover:scale-[1] transition-all">
+                  <div className=" w-7 sm:w-10 h-7 sm:h-10 scale-[0.3] bg-white rounded-full flex items-center justify-center text-xl ml-7 group-hover:scale-[1] transition-all">
                     <GoArrowUpRight className="hidden group-hover:block" />
                   </div>
                 </button>
               </div>
               <div
-                className={`imgContainer h-[420px] w-[587px] mt-3 bg-red-700 rounded-xl overflow-hidden ${
+                className={`imgContainer sm:h-[420px] h-[260px] max-w-[587px] mt-3 bg-red-700 rounded-xl overflow-hidden ${
                   hovering ? "scale-95" : null
                 }`}
               >
