@@ -12,14 +12,14 @@ const Feature = () => {
   return (
     <>
       <div className="py-28 bg-white">
-        <div className="container">
-          <h3 className="text-[52px] font-['Neue_Montreal'] font-normal pb-8">
+        <div className="container px-4 sm:px-0">
+          <h3 className="text-[32px] sm:text-[52px] font-['Neue_Montreal'] font-normal pb-8">
             Featured projects
           </h3>
         </div>
         <div className="border-t border-[#0000007c] py-12">
-          <div className="container">
-            <div className="relative flex items-center justify-between">
+          <div className="container px-4 sm:px-0">
+            <div className="relative flex items-center justify-between flex-col sm:flex-row gap-y-20 sm:gap-y-0">
               <div>
                 <div className="flex items-center gap-x-2 mb-4">
                   <div className="w-3 h-3 rounded-full bg-black"></div>
@@ -28,7 +28,7 @@ const Feature = () => {
                   </p>
                 </div>
                 <div
-                  className={`group relative feature w-[629px] h-[500px] rounded-2xl cursor-pointer hover:scale-95 ${
+                  className={`group relative feature max-w-[629px] h-[300px] sm:h-[500px] rounded-2xl cursor-pointer hover:scale-95 ${
                     isHovering2 && "z-40"
                   }`}
                 >
@@ -43,7 +43,7 @@ const Feature = () => {
                       alt=""
                     />
                   </div>
-                  <h2 className="absolute left-full text-9xl z-50 top-1/2 -translate-x-[50%] -translate-y-[50%] font-semibold text-[#cdea68] overflow-hidden flex font-FamiljenGrotesk tracking-tight">
+                  <h2 className="absolute left-1/2 sm:left-full text-8xl sm:text-9xl z-50 top-1/2 -translate-x-[50%] -translate-y-[50%] font-semibold text-[#cdea68] overflow-hidden flex font-FamiljenGrotesk tracking-tight">
                     {"FYDE".split("").map((item, index) => (
                       <motion.span
                         initial={{ y: "100%" }}
@@ -60,11 +60,16 @@ const Feature = () => {
                     ))}
                   </h2>
                 </div>
-                <div className="flex items-center gap-x-3 pt-4">
-                  <Btn2 BtnTitle={"audit"} />
-                  <Btn2 BtnTitle={"copywriting"} />
-                  <Btn2 BtnTitle={"sales deck"} />
-                  <Btn2 BtnTitle={"slides design"} />
+                <div className="flex items-start gap-y-3 pt-4 flex-col sm:flex-row sm:gap-x-3 sm:items-center">
+                  <div className="flex items-center gap-x-3">
+                    <Btn2 BtnTitle={"audit"} />
+                    <Btn2 BtnTitle={"copywriting"} />
+                  </div>
+                  <div className="flex items-center gap-x-3">
+                    {" "}
+                    <Btn2 BtnTitle={"sales deck"} />
+                    <Btn2 BtnTitle={"slides design"} />
+                  </div>
                 </div>
               </div>
 
@@ -75,7 +80,7 @@ const Feature = () => {
                     VISE
                   </p>
                 </div>
-                <div className="group relative feature w-[629px] h-[500px] rounded-2xl cursor-pointer hover:scale-95">
+                <div className="group relative feature max-w-[629px] h-[300px] sm:h-[500px] rounded-2xl cursor-pointer hover:scale-95">
                   <div
                     onMouseEnter={() => setHovering(true)}
                     onMouseLeave={() => setHovering(false)}
@@ -87,7 +92,7 @@ const Feature = () => {
                       alt=""
                     />
                   </div>
-                  <h2 className="absolute right-full text-9xl z-[50] top-1/2 translate-x-[50%] -translate-y-[50%] font-semibold text-[#cdea68] overflow-hidden flex font-FamiljenGrotesk tracking-tight">
+                  <h2 className="absolute right-1/2 sm:right-full text-8xl sm:text-9xl z-[50] top-1/2 translate-x-[50%] -translate-y-[50%] font-semibold text-[#cdea68] overflow-hidden flex font-FamiljenGrotesk tracking-tight">
                     {"VISE".split("").map((item, index) => (
                       <motion.span
                         initial={{ y: "100%" }}
@@ -110,7 +115,7 @@ const Feature = () => {
                 </div>
               </div>
             </div>
-            <div className="flex items-center justify-between pt-28">
+            <div className="flex items-center justify-between pt-28 flex-col gap-y-20 sm:flex-row sm:gap-y-0">
               <div>
                 <div className="flex items-center gap-x-2 mb-4">
                   <div className="w-3 h-3 rounded-full bg-black"></div>
@@ -121,7 +126,7 @@ const Feature = () => {
                 <div
                   onMouseEnter={() => setHovering3(true)}
                   onMouseLeave={() => setHovering3(false)}
-                  className={`group feature relative w-[629px] h-[500px] rounded-2xl cursor-pointer hover:scale-95 ${
+                  className={`group feature relative max-w-[629px] h-[300px] sm:h-[500px] rounded-2xl cursor-pointer hover:scale-95 ${
                     isHovering3 && "z-30"
                   }`}
                 >
@@ -132,7 +137,7 @@ const Feature = () => {
                       alt=""
                     />
                   </div>
-                  <h2 className="absolute left-full text-9xl z-20 top-1/2 -translate-x-[50%] -translate-y-[50%] font-semibold text-[#cdea68] font-FamiljenGrotesk tracking-tight flex overflow-hidden items-center">
+                  <h2 className="absolute left-1/2 sm:left-full text-8xl sm:text-9xl z-20 top-1/2 -translate-x-[50%] -translate-y-[50%] font-semibold text-[#cdea68] font-FamiljenGrotesk tracking-tight flex overflow-hidden items-center">
                     {"TRAWA".split("").map((item, index) => (
                       <motion.span
                         initial={{ y: "100%" }}
@@ -149,9 +154,12 @@ const Feature = () => {
                     ))}
                   </h2>
                 </div>
-                <div className="flex items-center gap-x-3 pt-4">
-                  <Btn2 BtnTitle={"brand identity"} />
-                  <Btn2 BtnTitle={"design research"} />
+                <div className="flex items-start gap-y-3 pt-4 flex-col sm:flex-row sm:gap-x-3">
+                  <div className="flex items-center gap-x-3">
+                    <Btn2 BtnTitle={"brand identity"} />
+                    <Btn2 BtnTitle={"design research"} />
+                  </div>
+
                   <Btn2 BtnTitle={"investor deck"} />
                 </div>
               </div>
@@ -166,7 +174,7 @@ const Feature = () => {
                 <div
                   onMouseEnter={() => setHovering4(true)}
                   onMouseLeave={() => setHovering4(false)}
-                  className="group feature relative w-[629px] h-[500px] rounded-2xl cursor-pointer hover:scale-95"
+                  className="group feature relative max-w-[629px] h-[300px] sm:h-[500px] rounded-2xl cursor-pointer hover:scale-95"
                 >
                   <div className="w-full h-full bg-green-800 rounded-2xl overflow-hidden">
                     <img
@@ -175,7 +183,7 @@ const Feature = () => {
                       alt=""
                     />
                   </div>
-                  <h2 className="absolute right-full text-9xl z-30 top-1/2 translate-x-[50%] -translate-y-[50%] font-semibold text-[#cdea68] font-FamiljenGrotesk tracking-tight flex overflow-hidden items-center">
+                  <h2 className="absolute right-1/2 sm:right-full text-[40px] sm:text-9xl z-30 top-1/2 translate-x-[50%] -translate-y-[50%] font-semibold text-[#cdea68] font-FamiljenGrotesk tracking-tight flex overflow-hidden items-center">
                     {"PREMIUMBLEND".split("").map((item, index) => (
                       <motion.spna
                         initial={{ y: "100%" }}
@@ -199,7 +207,7 @@ const Feature = () => {
             </div>
           </div>
         </div>
-        <div className="flex items-center justify-center mt-24">
+        <div className="flex items-center justify-center mt-10 sm:mt-24">
           <button className="group readMoreBtn flex items-center bg-black py-3 pl-5 pr-2 rounded-full hover:bg-[#1d1d1d]">
             <a
               href="#"
