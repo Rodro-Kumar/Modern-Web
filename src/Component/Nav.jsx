@@ -139,7 +139,7 @@ const Nav = () => {
               <ul
                 className={`pt-3 pl-4 ${
                   open
-                    ? "opacity-[1] transition-all duration-[4s]"
+                    ? "opacity-[1] transition-all duration-[4.s]"
                     : "opacity-0 transition-all duration-[5s]"
                 }`}
               >
