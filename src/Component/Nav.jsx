@@ -97,7 +97,9 @@ const Nav = () => {
 
           <div
             className={`bg-[#212121] absolute w-full h-screen z-[999] md:hidden top-0 left-0 overflow-scroll pt-4 ${
-              open ? "top-0 transition-all" : "top-[-720px]"
+              open
+                ? "top-0 transition-all duration-[1s]"
+                : "top-[-100vh] transition-all duration-[1s]"
             }`}
           >
             <div className="pb-20  pl-4 ">
@@ -134,7 +136,13 @@ const Nav = () => {
             </div>
 
             <div className="border-t-2 border-[#363636]">
-              <ul className={`pt-3 pl-4 ${open ? "opacity-[1]" : "opacity-0"}`}>
+              <ul
+                className={`pt-3 pl-4 ${
+                  open
+                    ? "opacity-[1] transition-all duration-[4s]"
+                    : "opacity-0 transition-all duration-[5s]"
+                }`}
+              >
                 <li>
                   <a
                     href="#"
@@ -280,7 +288,7 @@ const Nav = () => {
             {open ? (
               <RxCross1 className="z-[999] absolute text-white right-4 rotate-180 transition-all" />
             ) : (
-              <RiMenu5Line className="rotate-180 transition-all" />
+              <RiMenu5Line className="transition-all duration-[1s]" />
             )}
           </div>
         </div>
