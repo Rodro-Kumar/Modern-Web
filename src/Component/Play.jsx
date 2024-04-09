@@ -16,19 +16,20 @@ const Play = () => {
   });
   return (
     <>
-      <div className="relative cursor-pointer h-screen">
-        <div className="w-full">
-          <div
-            data-scroll
-            data-scroll-section
-            data-scroll-speed="-.7"
-            className='absolute -z-20 bg-[url("src/assets/Top-Viewbbcbv-1-1440x921.jpg")] bg-cover bg-center w-full h-full'
-          ></div>
+      <div className="relative cursor-pointer">
+        <div className=" w-full">
+          <div className=" -z-20">
+            <img
+              className="w-full h-full"
+              src="https://ochi.design/wp-content/uploads/2022/05/Top-Viewbbcbv-1-1440x921.jpg"
+              alt=""
+            />
+          </div>
         </div>
 
-        <div className="gap-x-9 flex items-center justify-center absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
-          <div className="w-40 sm:w-52 h-40 sm:h-52 bg-white rounded-full flex items-center justify-center max-[360px]:w-32 max-[360px]:h-32">
-            <div className="w-24 sm:w-32 h-24 sm:h-32 bg-black rounded-full relative max-[360px]:w-16 max-[360px]:h-16">
+        <div className="z-20 gap-x-9 flex items-center justify-center absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
+          <div className="w-28 sm:w-52 h-28 sm:h-52 bg-white rounded-full flex items-center justify-center max-[360px]:w-32 max-[360px]:h-32">
+            <div className="w-16 sm:w-32 h-16 sm:h-32 bg-black rounded-full relative max-[360px]:w-16 max-[360px]:h-16">
               <div
                 style={{
                   transform: `translate(-50% , -50%) rotate(${rotate}deg)`,
@@ -42,8 +43,8 @@ const Play = () => {
               </p>
             </div>
           </div>
-          <div className="w-40 sm:w-52 h-40 sm:h-52 bg-white rounded-full flex items-center justify-center max-[360px]:w-32 max-[360px]:h-32">
-            <div className="w-24 sm:w-32 h-24 sm:h-32 bg-black rounded-full relative max-[360px]:w-16 max-[360px]:h-16">
+          <div className="w-28 sm:w-52 h-28 sm:h-52 bg-white rounded-full flex items-center justify-center max-[360px]:w-32 max-[360px]:h-32">
+            <div className="w-16 sm:w-32 h-16 sm:h-32 bg-black rounded-full relative max-[360px]:w-16 max-[360px]:h-16">
               <div
                 style={{
                   transform: `translate(-50% , -50%) rotate(${rotate}deg)`,
