@@ -12,7 +12,7 @@ const Nav = () => {
   return (
     <>
       <div className="fixed z-[999] w-full top-0 bg-[#ffffff25] backdrop-blur-md">
-        <div className="container py-4 flex justify-between items-center px-4 md:px-0">
+        <div className="container py-4 flex justify-between items-center px-4 xl:px-0">
           <div className="cursor-pointer">
             <svg
               width="72"
@@ -52,7 +52,7 @@ const Nav = () => {
                     data-link-alt="Services"
                     className="font-[Neue Montreal] font-normal text-base"
                   >
-                    Services
+                    <span>Services</span>
                   </a>
                 </li>
                 <li>
@@ -61,7 +61,7 @@ const Nav = () => {
                     data-link-alt="Our work"
                     className="font-[Neue Montreal] font-normal text-base"
                   >
-                    Our work
+                    <span>Our work</span>
                   </a>
                 </li>
                 <li>
@@ -70,7 +70,7 @@ const Nav = () => {
                     data-link-alt="About us"
                     className="font-[Neue Montreal] font-normal text-base"
                   >
-                    About us
+                    <span>About us</span>
                   </a>
                 </li>
                 <li>
@@ -79,7 +79,7 @@ const Nav = () => {
                     data-link-alt="Insights"
                     className="font-[Neue Montreal] font-normal text-base"
                   >
-                    Insights
+                    <span>Insights</span>
                   </a>
                 </li>
                 <li>
@@ -88,7 +88,7 @@ const Nav = () => {
                     data-link-alt="Contact us"
                     className="ml-48 font-[Neue Montreal] font-normal text-base"
                   >
-                    Contact us
+                    <span>Contact us</span>
                   </a>
                 </li>
               </ul>
@@ -96,11 +96,11 @@ const Nav = () => {
           </div>
 
           <div
-            className={`bg-[#212121] absolute w-full h-screen z-[999] sm:hidden top-0 left-0 overflow-scroll pt-4 ${
-              open ? "top-0 transition-all" : "top-[-685px]"
+            className={`bg-[#212121] absolute w-full h-screen z-[999] md:hidden top-0 left-0 overflow-scroll pt-4 ${
+              open ? "top-0 transition-all" : "top-[-700px]"
             }`}
           >
-            <div className="pb-20 pl-4">
+            <div className="pb-20  pl-4 ">
               <a href="#">
                 <svg
                   width="72"
@@ -217,7 +217,7 @@ const Nav = () => {
                 </li>
               </ul>
               <div>
-                <ul>
+                <ul className="pt-5">
                   <li className=" text-white font-['Neue_Montreal'] text-base font-normal">
                     L:
                   </li>
@@ -227,7 +227,7 @@ const Nav = () => {
                         href="#"
                         className=" text-white font-['Neue_Montreal'] text-base font-normal"
                       >
-                        Instagram
+                        202-1965 W 4th Ave
                       </a>
                     </li>
                     <li>
@@ -235,7 +235,7 @@ const Nav = () => {
                         href="#"
                         className=" text-white font-['Neue_Montreal'] text-base font-normal"
                       >
-                        Instagram
+                        Vancouver, Canada
                       </a>
                     </li>
                     <li>
@@ -243,7 +243,7 @@ const Nav = () => {
                         href="#"
                         className=" text-white font-['Neue_Montreal'] text-base font-normal"
                       >
-                        Instagram
+                        30 Chukarina St
                       </a>
                     </li>
                     <li>
@@ -251,7 +251,7 @@ const Nav = () => {
                         href="#"
                         className=" text-white font-['Neue_Montreal'] text-base font-normal"
                       >
-                        Instagram
+                        Lviv, Ukraine
                       </a>
                     </li>
                   </ul>
@@ -278,9 +278,9 @@ const Nav = () => {
             onClick={HandleOpen}
           >
             {open ? (
-              <RxCross1 className="z-[999] absolute text-white right-4" />
+              <RxCross1 className="z-[999] absolute text-white right-4 rotate-180 transition-all" />
             ) : (
-              <RiMenu5Line />
+              <RiMenu5Line className="rotate-180 transition-all" />
             )}
           </div>
         </div>

@@ -14,7 +14,7 @@ const About = () => {
         className="bg-[#cdea68] rounded-xl pt-20 pb-4 about"
       >
         <div className="pb-14 border-b border-[#00000048]">
-          <div className="container px-4 lg:px-0">
+          <div className="container px-4 xl:px-0">
             <h1 className="max-w-[1088px] text-[30px] sm:text-[40px] md:text-[52px] text-black font-normal font-['Neue_Montreal'] leading-[30px] sm:leading-[52px]">
               Ochi is a strategic partner for fast-grow­ing tech businesses that
               need to{" "}
@@ -33,7 +33,7 @@ const About = () => {
           </div>
         </div>
         <div className="border-b border-[#00000048] pt-4 pb-28 common">
-          <div className="container flex justify-between flex-col sm:flex-row px-4 lg:px-0">
+          <div className="container flex justify-between flex-col sm:flex-row px-4 xl:px-0">
             <div>
               <p className="font-['Neue_Montreal'] text-base font-normal text-black">
                 What you can expect:
@@ -95,7 +95,7 @@ const About = () => {
         </div>
         <div>
           <div className="container">
-            <div className="approach flex justify-between pb-4 sm:pb-12 flex-col md:flex-row px-4 lg:px-0">
+            <div className="approach flex justify-between pb-4 sm:pb-12 flex-col md:flex-row px-4 xl:px-0">
               <div>
                 <h4 className="text-[40px] lg:text-[52px] font-['Neue_Montreal'] font-normal leading-none mb-7 ">
                   Our approach:

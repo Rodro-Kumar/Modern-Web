@@ -12,14 +12,14 @@ const Feature = () => {
   return (
     <>
       <div className="py-28 bg-white">
-        <div className="container px-4 lg:px-0">
+        <div className="container px-4 xl:px-0">
           <h3 className="text-[32px] sm:text-[52px] font-['Neue_Montreal'] font-normal pb-8">
             Featured projects
           </h3>
         </div>
         <div className="border-t border-[#0000007c] py-12">
-          <div className="container px-4 lg:px-0">
-            <div className="relative flex items-center justify-between flex-col lg:flex-row gap-y-20 lg:gap-y-0">
+          <div className="container px-4 xl:px-0">
+            <div className="relative flex items-center lg:gap-x-4 xl:gap-x-0 justify-between flex-col lg:flex-row gap-y-20 lg:gap-y-0">
               <div>
                 <div className="flex items-center gap-x-2 mb-4">
                   <div className="w-3 h-3 rounded-full bg-black"></div>
@@ -62,13 +62,25 @@ const Feature = () => {
                 </div>
                 <div className="flex items-start gap-y-3 pt-4 flex-col sm:flex-row sm:gap-x-3 sm:items-center">
                   <div className="flex items-center gap-x-3">
-                    <Btn2 BtnTitle={"audit"} />
-                    <Btn2 BtnTitle={"copywriting"} />
+                    <Btn2
+                      BtnTitle={"audit"}
+                      className={"max-[354px]:text-xs"}
+                    />
+                    <Btn2
+                      BtnTitle={"copywriting"}
+                      className={"max-[354px]:text-xs"}
+                    />
                   </div>
                   <div className="flex items-center gap-x-3">
                     {" "}
-                    <Btn2 BtnTitle={"sales deck"} />
-                    <Btn2 BtnTitle={"slides design"} />
+                    <Btn2
+                      BtnTitle={"sales deck"}
+                      className={"max-[354px]:text-xs"}
+                    />
+                    <Btn2
+                      BtnTitle={"slides design"}
+                      className={"max-[354px]:text-xs"}
+                    />
                   </div>
                 </div>
               </div>
@@ -110,12 +122,15 @@ const Feature = () => {
                   </h2>
                 </div>
                 <div className="flex items-center gap-x-3 pt-4">
-                  <Btn2 BtnTitle={"agency"} />
-                  <Btn2 BtnTitle={"company presentation"} />
+                  <Btn2 BtnTitle={"agency"} className={"max-[354px]:text-xs"} />
+                  <Btn2
+                    BtnTitle={"company presentation"}
+                    className={"max-[354px]:text-xs"}
+                  />
                 </div>
               </div>
             </div>
-            <div className="flex items-center justify-between pt-14 lg:pt-28 flex-col gap-y-20 lg:flex-row lg:gap-y-0">
+            <div className="flex items-center lg:gap-x-4 xl:gap-x-0 justify-between pt-14 lg:pt-28 flex-col gap-y-20 lg:flex-row lg:gap-y-0">
               <div>
                 <div className="flex items-center gap-x-2 mb-4">
                   <div className="w-3 h-3 rounded-full bg-black"></div>
@@ -156,11 +171,19 @@ const Feature = () => {
                 </div>
                 <div className="flex items-start gap-y-3 pt-4 flex-col sm:flex-row sm:gap-x-3">
                   <div className="flex items-center gap-x-3">
-                    <Btn2 BtnTitle={"brand identity"} />
-                    <Btn2 BtnTitle={"design research"} />
+                    <Btn2
+                      BtnTitle={"brand identity"}
+                      className={"max-[354px]:text-xs"}
+                    />
+                    <Btn2
+                      BtnTitle={"design research"}
+                      className={"max-[354px]:text-xs"}
+                    />
                   </div>
-
-                  <Btn2 BtnTitle={"investor deck"} />
+                  <Btn2
+                    BtnTitle={"investor deck"}
+                    className={"max-[354px]:text-xs"}
+                  />
                 </div>
               </div>
 
@@ -201,7 +224,10 @@ const Feature = () => {
                   </h2>
                 </div>
                 <div className="flex items-center gap-x-3 pt-4">
-                  <Btn2 BtnTitle={"branded template"} />
+                  <Btn2
+                    BtnTitle={"branded template"}
+                    className={"max-[354px]:text-xs"}
+                  />
                 </div>
               </div>
             </div>

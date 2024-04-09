@@ -17,7 +17,7 @@ const Marquee = () => {
                     repeat: Infinity,
                     duration: 10,
                   }}
-                  className="text-white text-[100px] sm:text-[150px] md:text-[300px] font-['Founders_Grotesk_X-Condensed] font-bold leading-none tracking-tighter"
+                  className="text-white max-[346px]:text-[50px] text-[100px] sm:text-[150px] md:text-[300px] font-['Founders_Grotesk_X-Condensed] font-bold leading-none tracking-tighter"
                 >
                   {item}
                 </motion.div>

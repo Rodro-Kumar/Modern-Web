@@ -4,18 +4,18 @@ const Footer = () => {
   return (
     <>
       <div className="bg-white py-20 common">
-        <div className="container px-4 lg:px-0">
-          <div className="flex justify-between flex-col lg:flex-row">
+        <div className="container px-4 xl:px-0">
+          <div className="flex justify-between  flex-col lg:flex-row">
             <div className="relative">
-              <h4 className="text-[50px] sm:text-[100px] tracking-[-3px] sm:tracking-[-8px] font-extrabold font-FamiljenGrotesk inline-block">
+              <h4 className="text-[50px] sm:text-[100px] lg:text-[80px] xl:text-[100px] tracking-[-3px] sm:tracking-[-8px] lg:tracking-tighter xl:tracking-[-8px] font-extrabold font-FamiljenGrotesk inline-block max-[370px]:text-[40px]">
                 EYE-{" "}
-                <span className="inline-block absolute left-0 top-[37px] sm:top-[75px] lg:top-[100px]">
+                <span className="inline-block absolute left-0 top-[37px] sm:top-[75px] lg:top-[70px] xl:top-[100px] max-[370px]:top-[30px]">
                   OPENING
                 </span>
               </h4>
             </div>
             <div>
-              <h4 className="text-[50px]  sm:text-[100px] font-FamiljenGrotesk font-extrabold tracking-[-3px] sm:tracking-[-8px]">
+              <h4 className="text-[50px] sm:text-[100px] lg:text-[80px] xl:text-[100px] font-FamiljenGrotesk font-extrabold tracking-[-3px] sm:tracking-[-8px] lg:tracking-tighter xl:tracking-[-8px] max-[370px]:text-[40px]">
                 PRESENTATIONS
               </h4>
               <div className="flex flex-row-reverse sm:flex-row items-center justify-between md:pt-10">
