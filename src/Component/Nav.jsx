@@ -97,7 +97,7 @@ const Nav = () => {
 
           <div
             className={`bg-[#212121] absolute w-full h-screen z-[999] md:hidden top-0 left-0 overflow-scroll pt-4 ${
-              open ? "top-0 transition-all" : "top-[-700px]"
+              open ? "top-0 transition-all" : "top-[-720px]"
             }`}
           >
             <div className="pb-20  pl-4 ">
