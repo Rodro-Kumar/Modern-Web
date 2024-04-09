@@ -9,7 +9,7 @@ const Footer = () => {
             <div className="relative">
               <h4 className="text-[50px] sm:text-[100px] lg:text-[80px] xl:text-[100px] tracking-[-3px] sm:tracking-[-8px] lg:tracking-tighter xl:tracking-[-8px] font-extrabold font-FamiljenGrotesk inline-block max-[370px]:text-[40px]">
                 EYE-{" "}
-                <span className="inline-block absolute left-0 top-[37px] sm:top-[75px] lg:top-[70px] xl:top-[100px] max-[370px]:top-[30px] max-[340px]:top-[30px] max-[330px]:top-[30px]">
+                <span className="inline-block absolute left-0 top-[37px] sm:top-[75px] lg:top-[70px] xl:top-[100px] max-[370px]:top-[30px] max-[340px]:top-[30px] max-[330px]:text-red-600">
                   OPENING
                 </span>
               </h4>
