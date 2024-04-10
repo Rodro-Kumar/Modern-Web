@@ -1,9 +1,10 @@
 import React from "react";
 import Button from "./Common/Btn2";
+import { Fade } from "react-awesome-reveal";
 
 const Card = () => {
   return (
-    <>
+    <Fade direction="left">
       <div className="pb-40 lg:pb-60">
         <div className="container">
           <div className="flex gap-x-5 flex-col lg:flex-row px-4 xl:px-0 gap-y-4 lg:gap-y-0">
@@ -24,6 +25,7 @@ const Card = () => {
                 </button>
               </div>
             </div>
+
             <div className="w-full sm:w-full lg:w-[100%] xl:w-1/2 sm:h-[380px] flex gap-x-5 flex-col sm:flex-row gap-y-4 sm:gap-y-0">
               <div className="relative h-[300px] sm:h-full w-full sm:w-1/2 lg:w-[50%] bg-[#212121] rounded-xl flex items-center justify-center">
                 <img
@@ -54,7 +56,7 @@ const Card = () => {
           </div>
         </div>
       </div>
-    </>
+    </Fade>
   );
 };
 

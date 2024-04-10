@@ -1,17 +1,26 @@
 import React from "react";
 import { GoArrowUpRight } from "react-icons/go";
+import { Fade } from "react-awesome-reveal";
 
 const Reviews = () => {
   return (
     <>
       <div>
         <div className="container px-4 xl:px-0">
-          <h2 className="font-['Neue_Montreal'] text-[32px] sm:text-[52px] font-normal pb-10">
+          <Fade
+            direction="left"
+            duration={"800"}
+            className="font-['Neue_Montreal'] text-[32px] sm:text-[52px] font-normal pb-10"
+          >
             Clients’ reviews
-          </h2>
+          </Fade>
         </div>
         <div className="border-t-2 border-[#00000081] common">
-          <div className="container px-4 xl:px-0">
+          <Fade
+            direction="up"
+            duration={"600"}
+            className="container px-4 xl:px-0"
+          >
             <div className="hidden sm:block">
               <div className="flex items-center lg:items-center sm:items-start justify-between pt-4 ">
                 <ul className="flex sm:items-start lg:items-center">
@@ -97,14 +106,20 @@ const Reviews = () => {
                 <p className="font-['Neue_Montreal'] text-base font-normal pb-4 block sm:hidden">
                   William Barnes
                 </p>
-                <div className="mb-7 w-[100px] h-[100px] overflow-hidden rounded-lg">
+                <Fade
+                  direction="left"
+                  className="mb-7 w-[100px] h-[100px] overflow-hidden rounded-lg"
+                >
                   <img
                     className="object-cover w-full h-full"
                     src="https://ochi.design/wp-content/uploads/2023/02/William-Barnes-1-300x300.png"
                     alt=""
                   />
-                </div>
-                <p className="font-['Neue_Montreal'] text-base font-normal max-w-[373px] max-[346px]:text-xs">
+                </Fade>
+                <Fade
+                  direction="right"
+                  className="font-['Neue_Montreal'] text-base font-normal max-w-[373px] max-[346px]:text-xs"
+                >
                   They were transparent about the time and the stages of the
                   project. The end product is high quality, and I feel confident
                   about how they were handholding the client through the
@@ -112,10 +127,10 @@ const Reviews = () => {
                   to put a sales deck together from scratch, and they would be
                   able to handhold the client experience from 0 to 100 very
                   effectively from story to design. 5/5
-                </p>
+                </Fade>
               </div>
             </div>
-          </div>
+          </Fade>
         </div>
         <div className="pb-24">
           <div className="border-t-2 border-[#00000062] common">

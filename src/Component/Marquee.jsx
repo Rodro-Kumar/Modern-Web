@@ -1,9 +1,10 @@
 import { motion } from "framer-motion";
 import React from "react";
+import { Fade } from "react-awesome-reveal";
 
 const Marquee = () => {
   return (
-    <>
+    <Fade duration={"1000"}>
       <div className="bg-[#004d43] w-full py-10 sm:py-24 mt-10 sm:mt-40 rounded-tl-lg rounded-tr-lg">
         <div className="flex whitespace-nowrap overflow-hidden items-center">
           {["WE ARE OCHI", "WE ARE OCHI"].map((item, index) => {
@@ -26,7 +27,7 @@ const Marquee = () => {
           })}
         </div>
       </div>
-    </>
+    </Fade>
   );
 };
 

@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import { Fade } from "react-awesome-reveal";
 
 const Play = () => {
   const [rotate, setrotate] = useState(0);
@@ -15,7 +16,7 @@ const Play = () => {
     });
   });
   return (
-    <>
+    <Fade duration={"600"}>
       <div className="relative cursor-pointer">
         <div className=" w-full">
           <div className=" -z-20">
@@ -60,7 +61,7 @@ const Play = () => {
           </div>
         </div>
       </div>
-    </>
+    </Fade>
   );
 };
 

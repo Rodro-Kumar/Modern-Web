@@ -42,7 +42,7 @@ const Hero = () => {
             )}
           </div>
         </div>
-        <div className="border-t-[1px] border-[#00000044] mt-[100px] py-4 md:mt-[256px]">
+        <div className="hero-line border-t-[1px] border-[#00000044] mt-[100px] py-4 md:mt-[256px]">
           <div className="container px-4 xl:px-0 gap-y-6 sm:gap-y-0 flex justify-between items-start flex-col sm:flex-row sm:items-center">
             {[
               "For public and private companies",

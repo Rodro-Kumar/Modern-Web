@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import Btn2 from "./Common/Btn2";
 import { GoArrowUpRight } from "react-icons/go";
 import { motion } from "framer-motion";
+import { Fade } from "react-awesome-reveal";
 
 const Feature = () => {
   const [isHovering, setHovering] = useState(false);
@@ -10,15 +11,19 @@ const Feature = () => {
   const [isHovering4, setHovering4] = useState(false);
 
   return (
-    <>
-      <div className="py-28 bg-white">
-        <div className="container px-4 xl:px-0">
+    <Fade duration={"200"}>
+      <div className="feature py-28 bg-white">
+        <Fade direction="right" className="container px-4 xl:px-0">
           <h3 className="text-[32px] sm:text-[52px] font-['Neue_Montreal'] font-normal pb-8">
             Featured projects
           </h3>
-        </div>
+        </Fade>
         <div className="border-t border-[#0000007c] py-12">
-          <div className="container px-4 xl:px-0">
+          <Fade
+            direction="up"
+            duration={"600"}
+            className="container px-4 xl:px-0"
+          >
             <div className="relative flex items-center lg:gap-x-4 xl:gap-x-0 justify-between flex-col lg:flex-row gap-y-20 lg:gap-y-0">
               <div>
                 <div className="flex items-center gap-x-2 mb-4">
@@ -231,7 +236,7 @@ const Feature = () => {
                 </div>
               </div>
             </div>
-          </div>
+          </Fade>
         </div>
 
         <div className="flex items-center justify-center mt-10 lg:mt-24">
@@ -248,7 +253,7 @@ const Feature = () => {
           </button>
         </div>
       </div>
-    </>
+    </Fade>
   );
 };
 

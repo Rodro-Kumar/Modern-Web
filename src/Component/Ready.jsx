@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { RxArrowTopRight } from "react-icons/rx";
+import { Fade } from "react-awesome-reveal";
 
 const Ready = () => {
   const [rotate, setrotate] = useState(0);
@@ -21,10 +22,11 @@ const Ready = () => {
       <div className="bg-[#cdea68] py-44 cursor-text rounded-tr-xl rounded-tl-xl sm:rounded-none">
         <div className="container">
           <div className="flex flex-col items-center justify-center relative">
-            <h2 className="text-[60px] sm:text-[100px] lg:text-[160px] xl:text-[220px] font-semibold font-FjallaOne text-[#212121] text-center leading-none">
-              READY <br />
-              TO START <br />
-              THE PROJECT?
+            <h2 className="overflow-hidden text-[60px] sm:text-[100px] lg:text-[160px] xl:text-[220px] font-semibold font-FjallaOne text-[#212121] text-center leading-none">
+              <Fade direction="up">READY </Fade>
+
+              <Fade direction="up">TO START</Fade>
+              <Fade direction="up">THE PROJECT?</Fade>
             </h2>
             <div className="flex items-center gap-x-9 absolute lg:top-[65%] sm:top-[135%] top-[160%] left-1/2 -translate-x-1/2 -translate-y-[65%]">
               <div className="w-28 h-28 lg:w-52 lg:h-52 rounded-full bg-white flex items-center justify-center">
