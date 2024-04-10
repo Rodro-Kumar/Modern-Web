@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import Btn2 from "./Common/Btn2";
 import { GoArrowUpRight } from "react-icons/go";
 import { motion } from "framer-motion";
-import { Fade } from "react-awesome-reveal";
+import { Slide, Fade } from "react-awesome-reveal";
 
 const Feature = () => {
   const [isHovering, setHovering] = useState(false);
@@ -19,9 +19,9 @@ const Feature = () => {
           </h3>
         </Fade>
         <div className="border-t border-[#0000007c] py-12">
-          <Fade
+          <Slide
             direction="up"
-            duration={"600"}
+            duration={"500"}
             className="container px-4 xl:px-0"
           >
             <div className="relative flex items-center lg:gap-x-4 xl:gap-x-0 justify-between flex-col lg:flex-row gap-y-20 lg:gap-y-0">
@@ -236,7 +236,7 @@ const Feature = () => {
                 </div>
               </div>
             </div>
-          </Fade>
+          </Slide>
         </div>
 
         <div className="flex items-center justify-center mt-10 lg:mt-24">

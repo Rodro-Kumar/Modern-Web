@@ -102,7 +102,7 @@ const Reviews = () => {
                   </div>
                 </div>
               </div>
-              <div className="flex flex-col pt-10">
+              <div className="flex flex-col pt-10 overflow-hidden">
                 <p className="font-['Neue_Montreal'] text-base font-normal pb-4 block sm:hidden">
                   William Barnes
                 </p>
@@ -118,7 +118,7 @@ const Reviews = () => {
                 </Fade>
                 <Fade
                   direction="right"
-                  className="overflow-hidden font-['Neue_Montreal'] text-base font-normal max-w-[373px] max-[346px]:text-xs"
+                  className="font-['Neue_Montreal'] text-base font-normal max-w-[373px] max-[346px]:text-xs"
                 >
                   They were transparent about the time and the stages of the
                   project. The end product is high quality, and I feel confident
