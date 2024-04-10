@@ -11,7 +11,7 @@ const Feature = () => {
   const [isHovering4, setHovering4] = useState(false);
 
   return (
-    <Fade duration={"200"}>
+    <Fade>
       <div className="feature py-28 bg-white">
         <Fade direction="right" className="container px-4 xl:px-0">
           <h3 className="text-[32px] sm:text-[52px] font-['Neue_Montreal'] font-normal pb-8">
@@ -19,11 +19,7 @@ const Feature = () => {
           </h3>
         </Fade>
         <div className="border-t border-[#0000007c] py-12">
-          <Fade
-            direction="up"
-            duration={"600"}
-            className="container px-4 xl:px-0"
-          >
+          <div className="container px-4 xl:px-0">
             <div className="relative flex items-center lg:gap-x-4 xl:gap-x-0 justify-between flex-col lg:flex-row gap-y-20 lg:gap-y-0">
               <div>
                 <div className="flex items-center gap-x-2 mb-4">
@@ -236,7 +232,7 @@ const Feature = () => {
                 </div>
               </div>
             </div>
-          </Fade>
+          </div>
         </div>
 
         <div className="flex items-center justify-center mt-10 lg:mt-24">

@@ -29,8 +29,8 @@ const Play = () => {
         </div>
 
         <div className="z-20 gap-x-9 flex items-center justify-center absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
-          <div className="w-28 sm:w-52 h-28 sm:h-52 bg-white rounded-full flex items-center justify-center max-[360px]:w-32 max-[360px]:h-32">
-            <div className="w-16 sm:w-32 h-16 sm:h-32 bg-black rounded-full relative max-[360px]:w-16 max-[360px]:h-16">
+          <div className="w-28 sm:w-52 h-28 sm:h-52 bg-white rounded-full flex items-center justify-center max-[375px]:w-28 max-[375px]:h-28">
+            <div className="w-16 sm:w-32 h-16 sm:h-32 bg-black rounded-full relative max-[375px]:w-14 max-[375px]:h-14">
               <div
                 style={{
                   transform: `translate(-50% , -50%) rotate(${rotate}deg)`,
@@ -44,8 +44,8 @@ const Play = () => {
               </p>
             </div>
           </div>
-          <div className="w-28 sm:w-52 h-28 sm:h-52 bg-white rounded-full flex items-center justify-center max-[360px]:w-32 max-[360px]:h-32">
-            <div className="w-16 sm:w-32 h-16 sm:h-32 bg-black rounded-full relative max-[360px]:w-16 max-[360px]:h-16">
+          <div className="w-28 sm:w-52 h-28 sm:h-52 bg-white rounded-full flex items-center justify-center max-[375px]:w-28 max-[375px]:h-28">
+            <div className="w-16 sm:w-32 h-16 sm:h-32 bg-black rounded-full relative max-[375px]:w-14 max-[375px]:h-14">
               <div
                 style={{
                   transform: `translate(-50% , -50%) rotate(${rotate}deg)`,
