@@ -96,17 +96,17 @@ const About = () => {
             </div>
           </Fade>
         </div>
-        <div>
+        <div className="overflow-hidden">
           <div className="container">
-            <div className="approach flex justify-between pb-4 sm:pb-12 flex-col md:flex-row px-4 xl:px-0">
+            <div className="approach  flex justify-between pb-4 sm:pb-12 flex-col md:flex-row px-4 xl:px-0">
               <div>
                 <Fade
-                  direction="left"
+                  direction="up"
                   className="text-[40px] lg:text-[52px] font-['Neue_Montreal'] font-normal leading-none mb-7 "
                 >
                   Our approach:
                 </Fade>
-                <Fade direction="right">
+                <Fade direction="up">
                   <button
                     onMouseEnter={() => sethovering(true)}
                     onMouseLeave={() => sethovering(false)}
@@ -125,7 +125,8 @@ const About = () => {
                 </Fade>
               </div>
               <Fade
-                direction="right"
+                direction="up"
+                duration={"800"}
                 className={`imgContainer sm:h-[420px] h-[260px] max-w-[587px] sm:mt-3 mt-10 bg-red-700 rounded-xl overflow-hidden ${
                   hovering ? "scale-95" : null
                 }`}

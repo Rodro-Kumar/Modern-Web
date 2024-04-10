@@ -22,113 +22,11 @@ const Footer = () => {
               >
                 PRESENTATIONS
               </Slide>
-              <div className="flex flex-row-reverse sm:flex-row items-center justify-between md:pt-10">
-                <ul>
-                  <li className="text-base font-['Neue_Montreal'] font-normal pb-2">
-                    S:
-                  </li>
-                  <ul className="flex flex-col pb-5">
-                    <li>
-                      <a
-                        href="#"
-                        className="font-['Neue_Montreal'] text-base font-normal"
-                      >
-                        Instagram
-                      </a>
-                    </li>
-
-                    <li>
-                      <a
-                        href="#"
-                        className="font-['Neue_Montreal'] text-base font-normal"
-                      >
-                        Behance
-                      </a>
-                    </li>
-                    <li>
-                      <a
-                        href="#"
-                        className="font-['Neue_Montreal'] text-base font-normal"
-                      >
-                        Facebook
-                      </a>
-                    </li>
-                    <li>
-                      <a
-                        href="#"
-                        className="font-['Neue_Montreal'] text-base font-normal"
-                      >
-                        Linkedin
-                      </a>
-                    </li>
-                  </ul>
-                </ul>
-                <div className="block sm:hidden">
-                  <div className="flex flex-col">
-                    <ul>
-                      <li className="text-base font-['Neue_Montreal'] font-normal pb-2">
-                        M:
-                      </li>
-                      <ul className="flex flex-col">
-                        <li>
-                          <a
-                            href="#"
-                            className="font-['Neue_Montreal'] text-base font-normal"
-                          >
-                            Home
-                          </a>
-                        </li>
-                        <li>
-                          <a
-                            href="#"
-                            className="font-['Neue_Montreal'] text-base font-normal"
-                          >
-                            Services
-                          </a>
-                        </li>
-                        <li>
-                          <a
-                            href="#"
-                            className="font-['Neue_Montreal'] text-base font-normal"
-                          >
-                            Our work
-                          </a>
-                        </li>
-                        <li>
-                          <a
-                            href="#"
-                            className="font-['Neue_Montreal'] text-base font-normal"
-                          >
-                            About us
-                          </a>
-                        </li>
-                        <li>
-                          <a
-                            href="#"
-                            className="font-['Neue_Montreal'] text-base font-normal"
-                          >
-                            Insights
-                          </a>
-                        </li>
-                        <li>
-                          <a
-                            href="#"
-                            className="font-['Neue_Montreal'] text-base font-normal"
-                          >
-                            Contact us
-                          </a>
-                        </li>
-                      </ul>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-
-              <div className="flex justify-between">
-                <div>
-                  <ul className="pt-10 sm:pt-0">
+              <Fade direction="up">
+                <div className="flex flex-row-reverse sm:flex-row items-center justify-between md:pt-10">
+                  <ul>
                     <li className="text-base font-['Neue_Montreal'] font-normal pb-2">
-                      L:
+                      S:
                     </li>
                     <ul className="flex flex-col pb-5">
                       <li>
@@ -136,7 +34,16 @@ const Footer = () => {
                           href="#"
                           className="font-['Neue_Montreal'] text-base font-normal"
                         >
-                          202-1965 W 4th Ave
+                          Instagram
+                        </a>
+                      </li>
+
+                      <li>
+                        <a
+                          href="#"
+                          className="font-['Neue_Montreal'] text-base font-normal"
+                        >
+                          Behance
                         </a>
                       </li>
                       <li>
@@ -144,7 +51,7 @@ const Footer = () => {
                           href="#"
                           className="font-['Neue_Montreal'] text-base font-normal"
                         >
-                          Vancouver, Canada
+                          Facebook
                         </a>
                       </li>
                       <li>
@@ -152,33 +59,87 @@ const Footer = () => {
                           href="#"
                           className="font-['Neue_Montreal'] text-base font-normal"
                         >
-                          30 Chukarina St
-                        </a>
-                      </li>
-                      <li>
-                        <a
-                          href="#"
-                          className="font-['Neue_Montreal'] text-base font-normal"
-                        >
-                          Lviv, Ukraine
+                          Linkedin
                         </a>
                       </li>
                     </ul>
                   </ul>
+                  <div className="block sm:hidden">
+                    <div className="flex flex-col">
+                      <ul>
+                        <li className="text-base font-['Neue_Montreal'] font-normal pb-2">
+                          M:
+                        </li>
+                        <ul className="flex flex-col">
+                          <li>
+                            <a
+                              href="#"
+                              className="font-['Neue_Montreal'] text-base font-normal"
+                            >
+                              Home
+                            </a>
+                          </li>
+                          <li>
+                            <a
+                              href="#"
+                              className="font-['Neue_Montreal'] text-base font-normal"
+                            >
+                              Services
+                            </a>
+                          </li>
+                          <li>
+                            <a
+                              href="#"
+                              className="font-['Neue_Montreal'] text-base font-normal"
+                            >
+                              Our work
+                            </a>
+                          </li>
+                          <li>
+                            <a
+                              href="#"
+                              className="font-['Neue_Montreal'] text-base font-normal"
+                            >
+                              About us
+                            </a>
+                          </li>
+                          <li>
+                            <a
+                              href="#"
+                              className="font-['Neue_Montreal'] text-base font-normal"
+                            >
+                              Insights
+                            </a>
+                          </li>
+                          <li>
+                            <a
+                              href="#"
+                              className="font-['Neue_Montreal'] text-base font-normal"
+                            >
+                              Contact us
+                            </a>
+                          </li>
+                        </ul>
+                      </ul>
+                    </div>
+                  </div>
                 </div>
-                <div className="hidden sm:block">
-                  <div className="flex flex-col">
-                    <ul>
+              </Fade>
+
+              <Fade direction="up">
+                <div className="flex justify-between">
+                  <div>
+                    <ul className="pt-10 sm:pt-0">
                       <li className="text-base font-['Neue_Montreal'] font-normal pb-2">
-                        M:
+                        L:
                       </li>
-                      <ul className="flex flex-col">
+                      <ul className="flex flex-col pb-5">
                         <li>
                           <a
                             href="#"
                             className="font-['Neue_Montreal'] text-base font-normal"
                           >
-                            Home
+                            202-1965 W 4th Ave
                           </a>
                         </li>
                         <li>
@@ -186,7 +147,7 @@ const Footer = () => {
                             href="#"
                             className="font-['Neue_Montreal'] text-base font-normal"
                           >
-                            Services
+                            Vancouver, Canada
                           </a>
                         </li>
                         <li>
@@ -194,7 +155,7 @@ const Footer = () => {
                             href="#"
                             className="font-['Neue_Montreal'] text-base font-normal"
                           >
-                            Our work
+                            30 Chukarina St
                           </a>
                         </li>
                         <li>
@@ -202,38 +163,83 @@ const Footer = () => {
                             href="#"
                             className="font-['Neue_Montreal'] text-base font-normal"
                           >
-                            About us
-                          </a>
-                        </li>
-                        <li>
-                          <a
-                            href="#"
-                            className="font-['Neue_Montreal'] text-base font-normal"
-                          >
-                            Insights
-                          </a>
-                        </li>
-                        <li>
-                          <a
-                            href="#"
-                            className="font-['Neue_Montreal'] text-base font-normal"
-                          >
-                            Contact us
+                            Lviv, Ukraine
                           </a>
                         </li>
                       </ul>
                     </ul>
                   </div>
+                  <div className="hidden sm:block">
+                    <div className="flex flex-col">
+                      <ul>
+                        <li className="text-base font-['Neue_Montreal'] font-normal pb-2">
+                          M:
+                        </li>
+                        <ul className="flex flex-col">
+                          <li>
+                            <a
+                              href="#"
+                              className="font-['Neue_Montreal'] text-base font-normal"
+                            >
+                              Home
+                            </a>
+                          </li>
+                          <li>
+                            <a
+                              href="#"
+                              className="font-['Neue_Montreal'] text-base font-normal"
+                            >
+                              Services
+                            </a>
+                          </li>
+                          <li>
+                            <a
+                              href="#"
+                              className="font-['Neue_Montreal'] text-base font-normal"
+                            >
+                              Our work
+                            </a>
+                          </li>
+                          <li>
+                            <a
+                              href="#"
+                              className="font-['Neue_Montreal'] text-base font-normal"
+                            >
+                              About us
+                            </a>
+                          </li>
+                          <li>
+                            <a
+                              href="#"
+                              className="font-['Neue_Montreal'] text-base font-normal"
+                            >
+                              Insights
+                            </a>
+                          </li>
+                          <li>
+                            <a
+                              href="#"
+                              className="font-['Neue_Montreal'] text-base font-normal"
+                            >
+                              Contact us
+                            </a>
+                          </li>
+                        </ul>
+                      </ul>
+                    </div>
+                  </div>
                 </div>
-              </div>
-              <ul>
-                <li className="text-base font-['Neue_Montreal'] font-normal pb-2">
-                  E:
-                </li>
-                <li>
-                  <a href="#">hello@ochi.design</a>
-                </li>
-              </ul>
+              </Fade>
+              <Fade direction="up">
+                <ul>
+                  <li className="text-base font-['Neue_Montreal'] font-normal pb-2">
+                    E:
+                  </li>
+                  <li>
+                    <a href="#">hello@ochi.design</a>
+                  </li>
+                </ul>
+              </Fade>
             </div>
           </div>
           <div className="flex items-start sm:items-center justify-between pt-14 sm:py-14 flex-col sm:flex-row gap-y-[30px] sm:gap-y-0">

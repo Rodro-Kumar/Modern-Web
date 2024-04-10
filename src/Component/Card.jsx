@@ -5,7 +5,7 @@ import { Fade } from "react-awesome-reveal";
 const Card = () => {
   return (
     <Fade direction="left">
-      <div className="pb-40 lg:pb-60">
+      <div className="pb-40 lg:pb-60 overflow-hidden">
         <div className="container">
           <div className="flex gap-x-5 flex-col lg:flex-row px-4 xl:px-0 gap-y-4 lg:gap-y-0">
             <div className="relative md:h-[380px] h-[300px] w-full lg:w-[40%] xl:w-1/2 bg-[#004d43] rounded-xl flex items-center justify-center flex-col">

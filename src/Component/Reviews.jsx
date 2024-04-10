@@ -6,7 +6,7 @@ const Reviews = () => {
   return (
     <>
       <div>
-        <div className="container px-4 xl:px-0">
+        <div className="container px-4 xl:px-0 overflow-hidden">
           <Fade
             direction="left"
             duration={"800"}
@@ -118,7 +118,7 @@ const Reviews = () => {
                 </Fade>
                 <Fade
                   direction="right"
-                  className="font-['Neue_Montreal'] text-base font-normal max-w-[373px] max-[346px]:text-xs"
+                  className="overflow-hidden font-['Neue_Montreal'] text-base font-normal max-w-[373px] max-[346px]:text-xs"
                 >
                   They were transparent about the time and the stages of the
                   project. The end product is high quality, and I feel confident
