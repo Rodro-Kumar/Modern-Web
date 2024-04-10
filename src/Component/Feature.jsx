@@ -20,8 +20,8 @@ const Feature = () => {
         </Fade>
         <div className="border-t border-[#0000007c] py-12">
           <Slide
-            direction="up"
-            duration={"500"}
+            direction="left"
+            duration={"1000"}
             className="container px-4 xl:px-0"
           >
             <div className="relative flex items-center lg:gap-x-4 xl:gap-x-0 justify-between flex-col lg:flex-row gap-y-20 lg:gap-y-0">

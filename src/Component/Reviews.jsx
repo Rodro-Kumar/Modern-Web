@@ -81,7 +81,7 @@ const Reviews = () => {
               </div>
             </div>
 
-            <div className="py-7 sm:py-12 flex justify-center gap-x-32 flex-col sm:flex-row">
+            <div className="py-7 sm:py-12 flex justify-center gap-x-32 flex-col sm:flex-row overflow-hidden">
               <div className="flex flex-row gap-x-3 sm:gap-y-3 sm:flex-col">
                 <div className="group flex items-center gap-x-2">
                   <button className="text-[12px] whitespace-nowrap sm:text-base py-[6px] px-4 border-[1.5px] sm:border-[3px] bg-[#0000] border-[#00000067] rounded-full text-black font-['Neue_Montreal'] hover:bg-[#000] hover:text-white transition-all cursor-pointer">
@@ -102,12 +102,12 @@ const Reviews = () => {
                   </div>
                 </div>
               </div>
-              <div className="flex flex-col pt-10 overflow-hidden">
+              <div className="flex flex-col pt-10">
                 <p className="font-['Neue_Montreal'] text-base font-normal pb-4 block sm:hidden">
                   William Barnes
                 </p>
                 <Fade
-                  direction="left"
+                  direction="up"
                   className="mb-7 w-[100px] h-[100px] overflow-hidden rounded-lg"
                 >
                   <img
@@ -117,7 +117,7 @@ const Reviews = () => {
                   />
                 </Fade>
                 <Fade
-                  direction="right"
+                  direction="up"
                   className="font-['Neue_Montreal'] text-base font-normal max-w-[373px] max-[346px]:text-xs"
                 >
                   They were transparent about the time and the stages of the
