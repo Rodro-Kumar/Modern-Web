@@ -23,10 +23,16 @@ const Ready = () => {
         <div className="container">
           <div className="flex flex-col items-center justify-center relative">
             <h2 className="overflow-hidden text-[60px] sm:text-[100px] lg:text-[160px] xl:text-[220px] font-semibold font-FjallaOne text-[#212121] text-center leading-none">
-              <Fade direction="up">READY </Fade>
+              <Fade triggerOnce="true" direction="up">
+                READY{" "}
+              </Fade>
 
-              <Fade direction="up">TO START</Fade>
-              <Fade direction="up">THE PROJECT?</Fade>
+              <Fade triggerOnce="true" direction="up">
+                TO START
+              </Fade>
+              <Fade triggerOnce="true" direction="up">
+                THE PROJECT?
+              </Fade>
             </h2>
             <div className="flex items-center gap-x-9 absolute lg:top-[65%] sm:top-[135%] top-[160%] left-1/2 -translate-x-1/2 -translate-y-[65%]">
               <div className="w-28 h-28 lg:w-52 lg:h-52 rounded-full bg-white flex items-center justify-center">

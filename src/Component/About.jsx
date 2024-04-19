@@ -15,7 +15,11 @@ const About = () => {
         className="bg-[#cdea68] rounded-xl pt-20 pb-4 about"
       >
         <div className="pb-14 border-b border-[#00000048]">
-          <Fade direction="up" className="container px-4 xl:px-0">
+          <Fade
+            triggerOnce="true"
+            direction="up"
+            className="container px-4 xl:px-0"
+          >
             <h1 className="max-w-[1088px] text-[30px] sm:text-[40px] md:text-[52px] text-black font-normal font-['Neue_Montreal'] leading-[30px] sm:leading-[52px]">
               Ochi is a strategic partner for fast-grow­ing tech businesses that
               need to{" "}
@@ -34,7 +38,7 @@ const About = () => {
           </Fade>
         </div>
         <div className="border-b border-[#00000048] pt-4 pb-28 common">
-          <Fade direction="up">
+          <Fade triggerOnce="true" direction="up">
             <div className="container flex justify-between flex-col sm:flex-row px-4 xl:px-0">
               <div>
                 <p className="font-['Neue_Montreal'] text-base font-normal text-black">
@@ -101,12 +105,13 @@ const About = () => {
             <div className="approach  flex justify-between pb-4 sm:pb-12 flex-col md:flex-row px-4 xl:px-0">
               <div>
                 <Fade
+                  triggerOnce="true"
                   direction="up"
                   className="text-[40px] lg:text-[52px] font-['Neue_Montreal'] font-normal leading-none mb-7 "
                 >
                   Our approach:
                 </Fade>
-                <Fade direction="up">
+                <Fade triggerOnce="true" direction="up">
                   <button
                     onMouseEnter={() => sethovering(true)}
                     onMouseLeave={() => sethovering(false)}
@@ -125,6 +130,7 @@ const About = () => {
                 </Fade>
               </div>
               <Fade
+                triggerOnce="true"
                 direction="up"
                 duration={"800"}
                 className={`imgContainer sm:h-[420px] h-[260px] max-w-[587px] sm:mt-3 mt-10 bg-red-700 rounded-xl overflow-hidden ${

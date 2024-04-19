@@ -16,7 +16,7 @@ const Play = () => {
     });
   });
   return (
-    <Fade duration={"600"}>
+    <Fade triggerOnce="true" direction="up" duration={"600"}>
       <div className="relative cursor-pointer">
         <div className=" w-full">
           <div className=" -z-20">

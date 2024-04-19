@@ -11,16 +11,21 @@ const Feature = () => {
   const [isHovering4, setHovering4] = useState(false);
 
   return (
-    <Fade>
+    <Fade triggerOnce="true">
       <div className="feature py-28 bg-white overflow-hidden">
-        <Fade direction="right" className="container px-4 xl:px-0 ">
+        <Fade
+          triggerOnce="true"
+          direction="right"
+          className="container px-4 xl:px-0 "
+        >
           <h3 className="text-[32px] sm:text-[52px] font-['Neue_Montreal'] font-normal pb-8">
             Featured projects
           </h3>
         </Fade>
         <div className="border-t border-[#0000007c] py-12">
-          <Slide
-            direction="left"
+          <Fade
+            triggerOnce="true"
+            direction="up"
             duration={"1000"}
             className="container px-4 xl:px-0"
           >
@@ -236,7 +241,7 @@ const Feature = () => {
                 </div>
               </div>
             </div>
-          </Slide>
+          </Fade>
         </div>
 
         <div className="flex items-center justify-center mt-10 lg:mt-24">

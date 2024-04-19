@@ -8,6 +8,7 @@ const Reviews = () => {
       <div>
         <div className="container px-4 xl:px-0 overflow-hidden">
           <Fade
+            triggerOnce="true"
             direction="left"
             duration={"800"}
             className="font-['Neue_Montreal'] text-[32px] sm:text-[52px] font-normal pb-10"
@@ -17,6 +18,7 @@ const Reviews = () => {
         </div>
         <div className="border-t-2 border-[#00000081] common">
           <Fade
+            triggerOnce="true"
             direction="up"
             duration={"600"}
             className="container px-4 xl:px-0"
@@ -107,6 +109,7 @@ const Reviews = () => {
                   William Barnes
                 </p>
                 <Fade
+                  triggerOnce="true"
                   direction="up"
                   className="mb-7 w-[100px] h-[100px] overflow-hidden rounded-lg"
                 >
@@ -117,6 +120,7 @@ const Reviews = () => {
                   />
                 </Fade>
                 <Fade
+                  triggerOnce="true"
                   direction="up"
                   className="font-['Neue_Montreal'] text-base font-normal max-w-[373px] max-[346px]:text-xs"
                 >

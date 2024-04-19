@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { RiMenu5Line } from "react-icons/ri";
 import { RxCross1 } from "react-icons/rx";
+import { NavLink } from "react-router-dom";
 
 const Nav = () => {
   const [open, setopen] = useState(false);
@@ -47,49 +48,49 @@ const Nav = () => {
             <div className="links">
               <ul className="flex items-center gap-x-6">
                 <li>
-                  <a
-                    href="#"
+                  <NavLink
+                    relative="card"
                     data-link-alt="Services"
                     className="font-[Neue Montreal] font-normal text-base"
                   >
                     <span>Services</span>
-                  </a>
+                  </NavLink>
                 </li>
                 <li>
-                  <a
+                  <NavLink
                     href="#"
                     data-link-alt="Our work"
                     className="font-[Neue Montreal] font-normal text-base"
                   >
                     <span>Our work</span>
-                  </a>
+                  </NavLink>
                 </li>
                 <li>
-                  <a
+                  <NavLink
                     href="#"
                     data-link-alt="About us"
                     className="font-[Neue Montreal] font-normal text-base"
                   >
                     <span>About us</span>
-                  </a>
+                  </NavLink>
                 </li>
                 <li>
-                  <a
+                  <NavLink
                     href="#"
                     data-link-alt="Insights"
                     className="font-[Neue Montreal] font-normal text-base"
                   >
                     <span>Insights</span>
-                  </a>
+                  </NavLink>
                 </li>
                 <li>
-                  <a
+                  <NavLink
                     href="#"
                     data-link-alt="Contact us"
                     className="ml-48 font-[Neue Montreal] font-normal text-base"
                   >
                     <span>Contact us</span>
-                  </a>
+                  </NavLink>
                 </li>
               </ul>
             </div>
@@ -146,7 +147,7 @@ const Nav = () => {
                 <li>
                   <a
                     href="#"
-                    className="relative font-FamiljenGrotesk font-bold text-6xl text-white tracking-tighter"
+                    className="relative font-FamiljenGrotesk font-bold  text-4xl sm:text-6xl text-white tracking-tighter"
                   >
                     SERVICES
                   </a>
@@ -154,7 +155,7 @@ const Nav = () => {
                 <li>
                   <a
                     href="#"
-                    className="relative font-FamiljenGrotesk font-bold text-6xl text-white tracking-tighter"
+                    className="relative font-FamiljenGrotesk font-bold text-4xl sm:text-6xl text-white tracking-tighter"
                   >
                     OUR WORK
                   </a>
@@ -162,7 +163,7 @@ const Nav = () => {
                 <li>
                   <a
                     href="#"
-                    className="relative font-FamiljenGrotesk font-bold text-6xl text-white tracking-tighter"
+                    className="relative font-FamiljenGrotesk font-bold text-4xl sm:text-6xl text-white tracking-tighter"
                   >
                     ABOUT US
                   </a>
@@ -170,7 +171,7 @@ const Nav = () => {
                 <li>
                   <a
                     href="#"
-                    className="relative font-FamiljenGrotesk font-bold text-6xl text-white tracking-tighter"
+                    className="relative font-FamiljenGrotesk font-bold text-4xl sm:text-6xl text-white tracking-tighter"
                   >
                     INSIGHTS
                   </a>
@@ -178,7 +179,7 @@ const Nav = () => {
                 <li>
                   <a
                     href="#"
-                    className="relative font-FamiljenGrotesk font-bold text-6xl text-white tracking-tighter"
+                    className="relative font-FamiljenGrotesk font-bold text-4xl sm:text-6xl text-white tracking-tighter"
                   >
                     CONTACT US
                   </a>
