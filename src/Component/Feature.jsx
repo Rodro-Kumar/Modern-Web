@@ -12,7 +12,7 @@ const Feature = () => {
 
   return (
     <Fade triggerOnce="true">
-      <div className="feature py-28 bg-white overflow-hidden">
+      <div id="project" className="feature py-28 bg-white overflow-hidden">
         <Fade
           triggerOnce="true"
           direction="right"

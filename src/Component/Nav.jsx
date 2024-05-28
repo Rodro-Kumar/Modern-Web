@@ -1,13 +1,16 @@
 import React, { useState } from "react";
 import { RiMenu5Line } from "react-icons/ri";
 import { RxCross1 } from "react-icons/rx";
-import { NavLink } from "react-router-dom";
 
 const Nav = () => {
   const [open, setopen] = useState(false);
 
   const HandleOpen = () => {
     setopen(!open);
+  };
+
+  const HandleClick = () => {
+    setopen(false);
   };
 
   return (
@@ -48,49 +51,50 @@ const Nav = () => {
             <div className="links">
               <ul className="flex items-center gap-x-6">
                 <li>
-                  <NavLink
+                  <a
+                    href="#start"
                     relative="card"
                     data-link-alt="Services"
                     className="font-[Neue Montreal] font-normal text-base"
                   >
                     <span>Services</span>
-                  </NavLink>
+                  </a>
                 </li>
                 <li>
-                  <NavLink
-                    href="#"
+                  <a
+                    href="#project"
                     data-link-alt="Our work"
                     className="font-[Neue Montreal] font-normal text-base"
                   >
                     <span>Our work</span>
-                  </NavLink>
+                  </a>
                 </li>
                 <li>
-                  <NavLink
-                    href="#"
+                  <a
+                    href="#about"
                     data-link-alt="About us"
                     className="font-[Neue Montreal] font-normal text-base"
                   >
                     <span>About us</span>
-                  </NavLink>
+                  </a>
                 </li>
                 <li>
-                  <NavLink
-                    href="#"
+                  <a
+                    href="#play"
                     data-link-alt="Insights"
                     className="font-[Neue Montreal] font-normal text-base"
                   >
                     <span>Insights</span>
-                  </NavLink>
+                  </a>
                 </li>
                 <li>
-                  <NavLink
-                    href="#"
+                  <a
+                    href="#footer"
                     data-link-alt="Contact us"
                     className="ml-48 font-[Neue Montreal] font-normal text-base"
                   >
                     <span>Contact us</span>
-                  </NavLink>
+                  </a>
                 </li>
               </ul>
             </div>
@@ -146,40 +150,45 @@ const Nav = () => {
               >
                 <li>
                   <a
-                    href="#"
+                    href="#start"
                     className="relative font-FamiljenGrotesk font-bold  text-4xl sm:text-6xl text-white tracking-tighter"
+                    onClick={HandleClick}
                   >
                     SERVICES
                   </a>
                 </li>
                 <li>
                   <a
-                    href="#"
+                    href="#project"
                     className="relative font-FamiljenGrotesk font-bold text-4xl sm:text-6xl text-white tracking-tighter"
+                    onClick={HandleClick}
                   >
                     OUR WORK
                   </a>
                 </li>
                 <li>
                   <a
-                    href="#"
+                    href="#about"
                     className="relative font-FamiljenGrotesk font-bold text-4xl sm:text-6xl text-white tracking-tighter"
+                    onClick={HandleClick}
                   >
                     ABOUT US
                   </a>
                 </li>
                 <li>
                   <a
-                    href="#"
+                    href="#play"
                     className="relative font-FamiljenGrotesk font-bold text-4xl sm:text-6xl text-white tracking-tighter"
+                    onClick={HandleClick}
                   >
                     INSIGHTS
                   </a>
                 </li>
                 <li>
                   <a
-                    href="#"
+                    href="#footer"
                     className="relative font-FamiljenGrotesk font-bold text-4xl sm:text-6xl text-white tracking-tighter"
+                    onClick={HandleClick}
                   >
                     CONTACT US
                   </a>

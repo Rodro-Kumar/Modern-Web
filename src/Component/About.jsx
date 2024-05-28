@@ -9,6 +9,7 @@ const About = () => {
   return (
     <>
       <div
+        id="about"
         // data-scroll
         // data-scroll-section
         // data-scroll-speed="-.3"

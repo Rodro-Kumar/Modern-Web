@@ -19,7 +19,10 @@ const Ready = () => {
 
   return (
     <>
-      <div className="bg-[#cdea68] py-44 cursor-text rounded-tr-xl rounded-tl-xl sm:rounded-none">
+      <div
+        id="start"
+        className="bg-[#cdea68] py-44 cursor-text rounded-tr-xl rounded-tl-xl sm:rounded-none"
+      >
         <div className="container">
           <div className="flex flex-col items-center justify-center relative">
             <h2 className="overflow-hidden text-[60px] sm:text-[100px] lg:text-[160px] xl:text-[220px] font-semibold font-FjallaOne text-[#212121] text-center leading-none">

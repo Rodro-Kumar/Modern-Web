@@ -4,7 +4,7 @@ import { Fade, Slide } from "react-awesome-reveal";
 const Footer = () => {
   return (
     <Fade triggerOnce="true" duration={"1000"}>
-      <div className="bg-white py-20 common overflow-hidden">
+      <div id="footer" className="bg-white py-20 common overflow-hidden">
         <div className="container px-4 xl:px-0">
           <div className="flex justify-between  flex-col lg:flex-row">
             <Slide triggerOnce="true" direction="left" className="relative">
