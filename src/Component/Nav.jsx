@@ -1,14 +1,13 @@
-import React, { useState } from "react";
+import { React, useState } from "react";
 import { RiMenu5Line } from "react-icons/ri";
 import { RxCross1 } from "react-icons/rx";
+import { Link } from "react-scroll";
 
 const Nav = () => {
   const [open, setopen] = useState(false);
-
   const HandleOpen = () => {
     setopen(!open);
   };
-
   const HandleClick = () => {
     setopen(false);
   };
@@ -17,7 +16,14 @@ const Nav = () => {
     <>
       <div className="fixed z-[999] w-full top-0 bg-[#ffffff25] backdrop-blur-md">
         <div className="container py-4 flex justify-between items-center px-4 xl:px-0">
-          <div className="cursor-pointer">
+          <Link
+            to="hero"
+            spy={true}
+            smooth={true}
+            offset={10}
+            duration={1500}
+            className="cursor-pointer"
+          >
             <svg
               width="72"
               height="30"
@@ -46,55 +52,75 @@ const Nav = () => {
                 fill="currentColor"
               ></path>
             </svg>
-          </div>
+          </Link>
           <div className="hidden md:block">
             <div className="links">
               <ul className="flex items-center gap-x-6">
                 <li>
-                  <a
-                    href="#start"
+                  <Link
+                    to="start"
+                    spy={true}
+                    smooth={true}
+                    offset={10}
+                    duration={1500}
                     relative="card"
                     data-link-alt="Services"
-                    className="font-[Neue Montreal] font-normal text-base"
+                    className="font-[Neue Montreal] font-normal text-base cursor-pointer"
                   >
                     <span>Services</span>
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a
-                    href="#project"
+                  <Link
+                    to="project"
+                    spy={true}
+                    smooth={true}
+                    offset={10}
+                    duration={1500}
                     data-link-alt="Our work"
-                    className="font-[Neue Montreal] font-normal text-base"
+                    className="font-[Neue Montreal] font-normal text-base cursor-pointer"
                   >
                     <span>Our work</span>
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a
-                    href="#about"
+                  <Link
+                    to="about"
+                    spy={true}
+                    smooth={true}
+                    offset={10}
+                    duration={1500}
                     data-link-alt="About us"
-                    className="font-[Neue Montreal] font-normal text-base"
+                    className="font-[Neue Montreal] font-normal text-base cursor-pointer"
                   >
                     <span>About us</span>
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a
-                    href="#play"
+                  <Link
+                    to="play"
+                    spy={true}
+                    smooth={true}
+                    offset={10}
+                    duration={1500}
                     data-link-alt="Insights"
-                    className="font-[Neue Montreal] font-normal text-base"
+                    className="font-[Neue Montreal] font-normal text-base cursor-pointer"
                   >
                     <span>Insights</span>
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a
-                    href="#footer"
+                  <Link
+                    to="footer"
+                    spy={true}
+                    smooth={true}
+                    offset={10}
+                    duration={1500}
                     data-link-alt="Contact us"
-                    className="ml-48 font-[Neue Montreal] font-normal text-base"
+                    className="ml-48 font-[Neue Montreal] font-normal text-base cursor-pointer"
                   >
                     <span>Contact us</span>
-                  </a>
+                  </Link>
                 </li>
               </ul>
             </div>

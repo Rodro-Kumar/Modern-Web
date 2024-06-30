@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 const Hero = () => {
   return (
     <>
-      <div className="mt-[112px]">
+      <div id="hero" className="mt-[112px]">
         <div className="container">
           {/* =============== */}
           <div className="heading px-4 xl:0 block sm:hidden">
@@ -22,7 +22,7 @@ const Hero = () => {
                             ease: [0.76, 0, 0.24, 1],
                             duration: 1,
                           }}
-                          className="w-[50px] sm:w-36 h-[60px] md:h-[96px] bg-[url('https://ochi.design/wp-content/uploads/2022/04/content-image01.jpg')] bg-cover bg-center mb-2 rounded-lg mr-3"
+                          className="w-[50px] sm:w-36 h-[60px] md:h-[96px] bg-[url('./src/assets/content-image01.jpg')] bg-cover bg-center mb-2 rounded-lg mr-3"
                         ></motion.div>
                       )}
                       <motion.h1
