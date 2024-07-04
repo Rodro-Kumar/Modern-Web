@@ -101,33 +101,6 @@
     top: 0;
   }
 
-  /* .links li a::before {
-    position: absolute;
-    content: attr(data-link-alt);
-    transform: translateY(38px);
-    left: 0;
-    color: #000;
-    opacity: 0;
-    transition: all linear 0.2s;
-    -webkit-transition: all linear 0.2s;
-    -moz-transition: all linear 0.2s;
-    -ms-transition: all linear 0.2s;
-    -o-transition: all linear 0.2s;
-    -webkit-transform: translateY(38px);
-    -moz-transform: translateY(38px);
-    -ms-transform: translateY(38px);
-    -o-transform: translateY(38px);
-  }
-
-  .links li a:hover::before {
-    opacity: 1;
-    transform: translateY(0);
-    -webkit-transform: translateY(0);
-    -moz-transform: translateY(0);
-    -ms-transform: translateY(0);
-    -o-transform: translateY(0);
-  } */
-
   .btn2 {
     position: relative;
     overflow: hidden;
@@ -251,40 +224,6 @@
   ::-webkit-scrollbar-thumb:hover {
     background-color: #004d4370;
   }
-
-  /* .Karman:hover::after {
-    transform-origin: left;
-    transform: scaleX(1);
-    -webkit-transform: scaleX(1);
-    -moz-transform: scaleX(1);
-    -ms-transform: scaleX(1);
-    -o-transform: scaleX(1);
-  }
-
-  .Karman::after {
-    content: "";
-    position: absolute;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    height: 1px;
-    transform: scaleX(1);
-    background-color: currentColor;
-    transform-origin: 0 0;
-    transition: transform ease 0.3s;
-    -webkit-transition: transform ease 0.3s;
-    -moz-transition: transform ease 0.3s;
-    -ms-transition: transform ease 0.3s;
-    -o-transition: transform ease 0.3s;
-    -webkit-transform: scaleX(1);
-    -moz-transform: scaleX(1);
-    -ms-transform: scaleX(1);
-    -o-transform: scaleX(1);
-    pointer-events: none;
-    animation: none;
-    -webkit-animation: none;
-  } */
 
   .List-Planetly::after {
     content: "";
@@ -447,116 +386,124 @@
   }
 }
 
-.common ul a::before {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  content: "";
-  height: 1px;
-  width: 100%;
-  transform-origin: right;
-  transform: scaleX(1);
-  background-color: #000;
-  -webkit-transform: scaleX(1);
-  -moz-transform: scaleX(1);
-  -ms-transform: scaleX(1);
-  -o-transform: scaleX(1);
-  transition: transform ease 0.3s;
-  -webkit-transition: transform ease 0.3s;
-  -moz-transition: transform ease 0.3s;
-  -ms-transition: transform ease 0.3s;
-  -o-transition: transform ease 0.3s;
-}
+@layer components {
+  .common ul a::before {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    content: "";
+    height: 1px;
+    width: 100%;
+    transform-origin: right;
+    transform: scaleX(1);
+    background-color: #000;
+    -webkit-transform: scaleX(1);
+    -moz-transform: scaleX(1);
+    -ms-transform: scaleX(1);
+    -o-transform: scaleX(1);
+    transition: transform ease 0.3s;
+    -webkit-transition: transform ease 0.3s;
+    -moz-transition: transform ease 0.3s;
+    -ms-transition: transform ease 0.3s;
+    -o-transition: transform ease 0.3s;
+  }
 
-.common ul a:hover::before {
-  transform-origin: left;
-  background-color: #000;
-  transform: scaleX(0);
-  -webkit-transform: scaleX(0);
-  -moz-transform: scaleX(0);
-  -ms-transform: scaleX(0);
-  -o-transform: scaleX(0);
-  transition: transform ease 0.3s;
-  -webkit-transition: transform ease 0.3s;
-  -moz-transition: transform ease 0.3s;
-  -ms-transition: transform ease 0.3s;
-  -o-transition: transform ease 0.3s;
-}
+  .common ul a:hover::before {
+    transform-origin: left;
+    background-color: #000;
+    transform: scaleX(0);
+    -webkit-transform: scaleX(0);
+    -moz-transform: scaleX(0);
+    -ms-transform: scaleX(0);
+    -o-transform: scaleX(0);
+    transition: transform ease 0.3s;
+    -webkit-transition: transform ease 0.3s;
+    -moz-transition: transform ease 0.3s;
+    -ms-transition: transform ease 0.3s;
+    -o-transition: transform ease 0.3s;
+  }
 
-/* ====================== */
+  /* ====================== */
 
-.about .under-hover {
-  position: relative;
-}
+  .about .under-hover {
+    position: relative;
+  }
 
-.about .under-hover::after {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  content: "";
-  height: 2px;
-  width: 100%;
-  transform: scaleX(0);
-  background-color: #000;
-  transform-origin: left;
-  transition: transform ease 0.6s;
-  -webkit-transition: transform ease 0.6s;
-  -moz-transition: transform ease 0.6s;
-  -ms-transition: transform ease 0.6s;
-  -o-transition: transform ease 0.6s;
-  -webkit-transform: scaleX(0);
-  -moz-transform: scaleX(0);
-  -ms-transform: scaleX(0);
-  -o-transform: scaleX(0);
-}
+  .about .under-hover::after {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    content: "";
+    height: 2px;
+    width: 100%;
+    transform: scaleX(0);
+    background-color: #000;
+    transform-origin: left;
+    transition: transform ease 0.6s;
+    -webkit-transition: transform ease 0.6s;
+    -moz-transition: transform ease 0.6s;
+    -ms-transition: transform ease 0.6s;
+    -o-transition: transform ease 0.6s;
+    -webkit-transform: scaleX(0);
+    -moz-transform: scaleX(0);
+    -ms-transform: scaleX(0);
+    -o-transform: scaleX(0);
+  }
 
-.about .under-hover:hover::after {
-  background-color: #000;
-  transform-origin: right;
-  transform: scaleX(1);
-  -webkit-transform: scaleX(1);
-  -moz-transform: scaleX(1);
-  -ms-transform: scaleX(1);
-  -o-transform: scaleX(1);
-  transition: transform ease 0.6s;
-  -webkit-transition: transform ease 0.6s;
-  -moz-transition: transform ease 0.6s;
-  -ms-transition: transform ease 0.6s;
-  -o-transition: transform ease 0.6s;
-}
+  .about .under-hover:hover::after {
+    background-color: #000;
+    transform-origin: right;
+    transform: scaleX(1);
+    -webkit-transform: scaleX(1);
+    -moz-transform: scaleX(1);
+    -ms-transform: scaleX(1);
+    -o-transform: scaleX(1);
+    transition: transform ease 0.6s;
+    -webkit-transition: transform ease 0.6s;
+    -moz-transition: transform ease 0.6s;
+    -ms-transition: transform ease 0.6s;
+    -o-transition: transform ease 0.6s;
+  }
 
-.about .under-hover::before {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  content: "";
-  height: 2px;
-  width: 100%;
-  transform-origin: right;
-  transform: scaleX(1);
-  background-color: #000;
-  -webkit-transform: scaleX(1);
-  -moz-transform: scaleX(1);
-  -ms-transform: scaleX(1);
-  -o-transform: scaleX(1);
-  transition: transform ease 0.3s;
-  -webkit-transition: transform ease 0.3s;
-  -moz-transition: transform ease 0.3s;
-  -ms-transition: transform ease 0.3s;
-  -o-transition: transform ease 0.3s;
-}
+  .about .under-hover::before {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    content: "";
+    height: 2px;
+    width: 100%;
+    transform-origin: right;
+    transform: scaleX(1);
+    background-color: #000;
+    -webkit-transform: scaleX(1);
+    -moz-transform: scaleX(1);
+    -ms-transform: scaleX(1);
+    -o-transform: scaleX(1);
+    transition: transform ease 0.3s;
+    -webkit-transition: transform ease 0.3s;
+    -moz-transition: transform ease 0.3s;
+    -ms-transition: transform ease 0.3s;
+    -o-transition: transform ease 0.3s;
+  }
 
-.about .under-hover:hover::before {
-  transform-origin: left;
-  background-color: #000;
-  transform: scaleX(0);
-  -webkit-transform: scaleX(0);
-  -moz-transform: scaleX(0);
-  -ms-transform: scaleX(0);
-  -o-transform: scaleX(0);
-  transition: transform ease 0.3s;
-  -webkit-transition: transform ease 0.3s;
-  -moz-transition: transform ease 0.3s;
-  -ms-transition: transform ease 0.3s;
-  -o-transition: transform ease 0.3s;
+  .about .under-hover:hover::before {
+    transform-origin: left;
+    background-color: #000;
+    transform: scaleX(0);
+    -webkit-transform: scaleX(0);
+    -moz-transform: scaleX(0);
+    -ms-transform: scaleX(0);
+    -o-transform: scaleX(0);
+    transition: transform ease 0.3s;
+    -webkit-transition: transform ease 0.3s;
+    -moz-transition: transform ease 0.3s;
+    -ms-transition: transform ease 0.3s;
+    -o-transition: transform ease 0.3s;
+  }
+
+  .heroOchi {
+    background-image: url("/src/assets/content-image01.jpg");
+    background-position: center;
+    background-size: cover;
+  }
 }
